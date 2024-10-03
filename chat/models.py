@@ -2,15 +2,23 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+# LLM Persona model
 class LLMPersona(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-    personality_traits = models.JSONField()
-    created_at = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Each persona belongs to a user
+    name = models.CharField(max_length=100)  # Name of the persona
+    personality_traits = models.JSONField()  # Store persona traits as JSON
+    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for persona creation
 
+    def __str__(self):
+        return f"{self.user.username} - {self.name}"
+
+# Message model
 class Message(models.Model):
-    sender = models.ForeignKey(User, on_delete=models.CASCADE)
-    persona = models.ForeignKey(LLMPersona, on_delete=models.CASCADE)
-    content = models.TextField()
-    created_at = models.DateTimeField(auto_now_add=True)
-    is_from_user = models.BooleanField(default=True)
+    sender = models.ForeignKey(User, on_delete=models.CASCADE)  # The sender of the message (user)
+    persona = models.ForeignKey(LLMPersona, on_delete=models.CASCADE)  # Which persona is involved in the message
+    content = models.TextField()  # The actual message content
+    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for message creation
+    is_from_user = models.BooleanField(default=True)  # Distinguishes between user and LLM messages
+
+    def __str__(self):
+        return f"Message from {self.sender.username} at {self.created_at}"
