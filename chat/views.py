@@ -66,3 +66,49 @@ def register_user(request):
                 'message': f'User {user.username} created successfully'
             }, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+from django.http import HttpResponse
+
+def gpt_3_view(request):
+    return HttpResponse("This is the GPT-3 response.")
+
+from django.http import JsonResponse
+from .models import Message, LLMPersona
+from django.views.decorators.csrf import csrf_exempt
+import json
+from django.contrib.auth.models import User
+
+@csrf_exempt
+def message_exchange(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        message_content = data.get('message')
+
+        # Ensure the user is authenticated or get the user (this will depend on your authentication system)
+        if request.user.is_authenticated:
+            user = request.user
+        else:
+            # For testing purposes, if the user is not authenticated, you can create or assign a default user.
+            user = User.objects.first()  # In real cases, raise an error or redirect to login
+
+        # Ensure there is a persona associated with the user
+        persona = LLMPersona.objects.filter(user=user).first()
+        if not persona:
+            # Create a default persona if none exists
+            persona = LLMPersona.objects.create(user=user, name="Default Persona", personality_traits={"trait": "friendly"})
+
+        # Simulate a response from LLM
+        response_content = f"Echo: {message_content}"
+
+        # Create the message with the user as the sender
+        message = Message.objects.create(
+            sender=user,
+            persona=persona,
+            content=message_content,
+            response=response_content,  # Store the LLM's response
+            is_from_user=True
+        )
+
+        return JsonResponse({'message': message_content, 'response': response_content})
+
+    return JsonResponse({'error': 'Invalid request'}, status=400)

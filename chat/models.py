@@ -17,6 +17,7 @@ class Message(models.Model):
     sender = models.ForeignKey(User, on_delete=models.CASCADE)  # The sender of the message (user)
     persona = models.ForeignKey(LLMPersona, on_delete=models.CASCADE)  # Which persona is involved in the message
     content = models.TextField()  # The actual message content
+    response = models.TextField(null=True, blank=True)  # The LLM's response (can be empty initially)
     created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for message creation
     is_from_user = models.BooleanField(default=True)  # Distinguishes between user and LLM messages
 
