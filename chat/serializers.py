@@ -2,6 +2,14 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
+# chat/serializers.py
+from rest_framework import serializers
+from django.contrib.auth.models import User
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'email', 'first_name', 'last_name')
 
 class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,7 +23,18 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             email=validated_data['email'],
             password=validated_data['password'],
         )
-        return user
+        refresh = RefreshToken.for_user(user)
+        token_data = {
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        }
+
+        # Return the user and their tokens
+        return {
+            'user': user,
+            'tokens': token_data
+        }
+
 
     def get_token(self, user):
         # Generate JWT token for the user

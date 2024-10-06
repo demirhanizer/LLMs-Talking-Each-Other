@@ -1,5 +1,8 @@
 # chat/views.py
+from django.contrib.auth import authenticate
 from django.http import HttpResponse
+from rest_framework_simplejwt.tokens import RefreshToken
+
 from .models import LLMPersona, Message
 from django.shortcuts import get_object_or_404
 from rest_framework.response import Response
@@ -12,7 +15,102 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from .models import LLMPersona
 from django.contrib.auth.models import User
 import json
+from django.http import JsonResponse
 
+from django.http import JsonResponse
+from .models import LLMPersona
+
+from rest_framework import generics
+from rest_framework.permissions import IsAuthenticated
+from django.contrib.auth.models import User
+from chat.serializers import UserSerializer
+
+# chat/views.py
+from django.contrib.auth.models import User
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework import status
+from .models import Message, LLMPersona
+
+@api_view(['POST'])
+def login_user(request):
+    username = request.data.get('username')
+    password = request.data.get('password')
+
+    # Authenticate the user
+    user = authenticate(username=username, password=password)
+
+    if user is not None:
+        # If the user is authenticated, generate a JWT token
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'refresh': str(refresh),
+            'access': str(refresh.access_token),
+        }, status=status.HTTP_200_OK)
+    else:
+        return Response({"error": "Invalid credentials"}, status=status.HTTP_401_UNAUTHORIZED)
+@api_view(['GET'])
+def get_messages_by_user_and_persona(request, username, persona_name):
+    try:
+        # Get the user by username
+        user = User.objects.get(username=username)
+
+        # Get the persona by name for the user
+        persona = LLMPersona.objects.get(user=user, name=persona_name)
+
+        # Get all messages related to the persona
+        messages = Message.objects.filter(persona=persona).order_by('-created_at')
+
+        # Serialize the messages
+        message_data = [
+            {
+                "content": message.content,
+                "response": message.response,
+                "is_from_user": message.is_from_user,
+                "created_at": message.created_at
+            }
+            for message in messages
+        ]
+        return Response(message_data, status=status.HTTP_200_OK)
+
+    except User.DoesNotExist:
+        return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+
+    except LLMPersona.DoesNotExist:
+        return Response({"error": "Persona not found for this user"}, status=status.HTTP_404_NOT_FOUND)
+
+
+class GetUserView(generics.RetrieveAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]  # Ensures only authenticated users can access this
+
+    def get_object(self):
+        # Return the currently authenticated user
+        return self.request.user
+
+def get_persona(request, persona_name):
+    try:
+        persona = LLMPersona.objects.get(name=persona_name)
+        return JsonResponse({'persona': persona.name, 'traits': persona.personality_traits})
+    except LLMPersona.DoesNotExist:
+        return JsonResponse({'error': 'Persona not found'}, status=404)
+
+
+@api_view(['GET'])
+def get_user_by_username(request, username):
+    try:
+        user = User.objects.get(username=username)
+        user_data = {
+            "id": user.id,
+            "username": user.username,
+            "email": user.email,
+            "first_name": user.first_name,
+            "last_name": user.last_name
+        }
+        return Response(user_data, status=status.HTTP_200_OK)
+    except User.DoesNotExist:
+        return Response({"error": "User not found"}, status=status.HTTP_404_NOT_FOUND)
 
 @api_view(['POST'])
 @authentication_classes([JWTAuthentication])
