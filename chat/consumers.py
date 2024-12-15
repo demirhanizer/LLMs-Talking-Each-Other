@@ -11,6 +11,65 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+from channels.generic.websocket import AsyncWebsocketConsumer
+from django.contrib.auth.models import User
+from chat.models import LLMPersona
+from rest_framework_simplejwt.tokens import UntypedToken
+from rest_framework_simplejwt.exceptions import InvalidToken, TokenError
+from jwt import decode as jwt_decode
+from django.conf import settings
+
+
+class LLMWebSocketConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        self.token = self.scope['query_string'].decode('utf-8').split("token=")[-1]
+        self.persona_name = self.scope['path'].split('/')[-2]  # Extract persona name from URL
+
+        try:
+            # Decode and validate JWT token
+            decoded_token = jwt_decode(self.token, settings.SECRET_KEY, algorithms=["HS256"])
+            user_id = decoded_token.get("user_id")
+            self.user = await self.get_user(user_id)
+
+            # Validate persona
+            if not await self.validate_persona(self.persona_name):
+                await self.close(code=403)
+                return
+
+            # Accept WebSocket connection
+            await self.accept()
+
+        except (InvalidToken, TokenError, KeyError):
+            await self.close(code=403)
+
+    async def disconnect(self, close_code):
+        # Handle disconnect
+        pass
+
+    async def receive(self, text_data):
+        try:
+            data = json.loads(text_data)
+            message = data.get("message", "")
+            response = f"Echo: {message}"  # Replace with LLM response logic
+            await self.send(text_data=json.dumps({"response": response}))
+        except Exception as e:
+            await self.send(text_data=json.dumps({"error": str(e)}))
+
+    @staticmethod
+    async def get_user(user_id):
+        try:
+            return await User.objects.aget(id=user_id)
+        except User.DoesNotExist:
+            return None
+
+    async def validate_persona(self, persona_name):
+        try:
+            await LLMPersona.objects.aget(name=persona_name)
+            return True
+        except LLMPersona.DoesNotExist:
+            return False
+
+
 class ChatConsumer(AsyncWebsocketConsumer):
     async def connect(self):
         # Extract the JWT token from the query string
@@ -29,17 +88,14 @@ class ChatConsumer(AsyncWebsocketConsumer):
             await self.close()
             return
 
-        # Get the persona name from the URL route
         self.persona_name = self.scope['url_route']['kwargs'].get('llm', None)
         if not self.persona_name:
             logger.error("Persona name not found in URL. Closing connection.")
             await self.close()
             return
 
-        # Get or create the LLMPersona instance
         self.persona = await self.get_persona(self.user, self.persona_name)
 
-        # Create a group name based on the persona and user
         self.room_group_name = f'persona_{self.persona_name}_{self.user.username}'
 
         # Join the group
@@ -51,12 +107,13 @@ class ChatConsumer(AsyncWebsocketConsumer):
         logger.info(f"User {self.user.username} connected to {self.room_group_name}")
 
     async def disconnect(self, close_code):
-        # Leave the group
-        await self.channel_layer.group_discard(
-            self.room_group_name,
-            self.channel_name
-        )
-        logger.info(f"User {self.user.username} disconnected from {self.room_group_name}")
+
+        if hasattr(self, 'room_group_name'):
+            await self.channel_layer.group_discard(
+                self.room_group_name,
+                self.channel_name
+            )
+            logger.info(f"User {self.user.username} disconnected from {self.room_group_name}")
 
     async def receive(self, text_data):
         logger.info(f"Received message: {text_data}")
@@ -64,7 +121,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
             text_data_json = json.loads(text_data)
             message_content = text_data_json.get('message', '')
 
-            # Save the user's message to the database
             await self.save_message(
                 sender=self.user,
                 persona=self.persona,
@@ -72,10 +128,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 is_from_user=True
             )
 
-            # Simulate an LLM response (echo the user's message)
             llm_response = f"Echo: {message_content}"
 
-            # Save the LLM's response to the database
             await self.save_message(
                 sender=None,  # No sender for LLM messages
                 persona=self.persona,
@@ -83,13 +137,12 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 is_from_user=False
             )
 
-            # Send the LLM's response back to the client
             await self.send(text_data=json.dumps({
                 'message': llm_response
             }))
 
         except json.JSONDecodeError:
-            # Handle JSON decoding error
+
             error_message = "Invalid message format. Please send a valid JSON."
             logger.error(f"JSONDecodeError: {error_message}")
             await self.send(text_data=json.dumps({
@@ -99,10 +152,8 @@ class ChatConsumer(AsyncWebsocketConsumer):
     @database_sync_to_async
     def get_user(self, token):
         try:
-            # Decode the JWT token to get the user ID
             access_token = AccessToken(token)
             user_id = access_token['user_id']
-            # Retrieve the user from the database
             user = User.objects.get(id=user_id)
             return user
         except Exception as e:
@@ -111,7 +162,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
 
     @database_sync_to_async
     def get_persona(self, user, persona_name):
-        # Retrieve or create the LLMPersona for the user
         persona, created = LLMPersona.objects.get_or_create(
             user=user,
             name=persona_name,
@@ -132,3 +182,71 @@ class ChatConsumer(AsyncWebsocketConsumer):
             response=response,
             is_from_user=is_from_user
         )
+import json
+import requests
+from urllib.parse import parse_qs
+from channels.generic.websocket import AsyncWebsocketConsumer
+from django.contrib.auth.models import User
+from chat.models import LLMPersona
+from asgiref.sync import sync_to_async
+
+# Helper function to add personas to database
+@sync_to_async
+def sync_personas_with_database(personas):
+    admin_user, created = User.objects.get_or_create(
+        username="admin",
+        defaults={"email": "admin@example.com", "is_staff": True, "is_superuser": True}
+    )
+    if created:
+        admin_user.set_password("admin123")
+        admin_user.save()
+
+    # Sync each persona with the database
+    for persona in personas:
+        LLMPersona.objects.update_or_create(
+            user=admin_user,
+            name=persona["name"],
+            defaults={"personality_traits": persona.get("traits", {})}
+        )
+
+class LLMWebSocketConsumer(AsyncWebsocketConsumer):
+    async def connect(self):
+        # Extract query parameters
+        query_params = parse_qs(self.scope["query_string"].decode())
+        token = query_params.get("token", [None])[0]
+        llm_name = self.scope["path"].split("/")[-2]
+
+        # Fetch personas from `get_all_personas` endpoint
+        try:
+            response = requests.get(
+                "http://127.0.0.1:8000/get_all_personas/",
+                headers={"Authorization": f"Bearer {token}"}
+            )
+            if response.status_code == 200:
+                personas = response.json().get("personas", [])
+                await sync_personas_with_database(personas)  # Sync personas to the database
+            else:
+                await self.close(code=403)
+                return
+        except Exception as e:
+            print(f"Error fetching personas: {e}")
+            await self.close(code=403)
+            return
+
+        # Validate the requested LLM name
+        try:
+            persona = await sync_to_async(LLMPersona.objects.get)(name=llm_name)
+            self.persona = persona
+            await self.accept()
+        except LLMPersona.DoesNotExist:
+            await self.close(code=403)
+
+    async def receive(self, text_data):
+        data = json.loads(text_data)
+        message = data.get("message", "")
+
+        # Simulated LLM response
+        response = f"Echo from {self.persona.name}: {message}"
+
+        # Send response back to the client
+        await self.send(text_data=json.dumps({"response": response}))

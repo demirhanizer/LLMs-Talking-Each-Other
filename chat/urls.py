@@ -1,7 +1,7 @@
 # chat/urls.py
 from django.urls import path
 from . import views
-from .views import GetUserView, get_user_by_username, get_messages_by_user_and_persona, login_user
+from .views import GetUserView, get_user_by_username, get_messages_by_user_and_persona, login_user, get_all_personas
 
 urlpatterns = [
     path('create_persona/', views.create_persona, name='create_persona'),
@@ -14,5 +14,6 @@ urlpatterns = [
     path('messages/<str:username>/<str:persona_name>/', get_messages_by_user_and_persona,
          name='get_messages_by_user_and_persona'),
     path('login/', login_user, name='login_user'),
+    path('get_all_personas/', get_all_personas, name='get_all_personas'),
 
 ]

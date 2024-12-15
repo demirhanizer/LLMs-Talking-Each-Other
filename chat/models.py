@@ -4,13 +4,17 @@ from django.contrib.auth.models import User
 
 # LLM Persona model
 class LLMPersona(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Each persona belongs to a user
-    name = models.CharField(max_length=100)  # Name of the persona
-    personality_traits = models.JSONField()  # Store persona traits as JSON
-    created_at = models.DateTimeField(auto_now_add=True)  # Timestamp for persona creation
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    personality_traits = models.JSONField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ('user', 'name')  # Ensures unique persona names per user
 
     def __str__(self):
         return f"{self.user.username} - {self.name}"
+
 
 # Message model
 # chat/models.py

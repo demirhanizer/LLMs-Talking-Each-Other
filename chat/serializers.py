@@ -15,7 +15,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('username', 'password', 'email')
-
+    #TODO: User creation olunca error mesajı göndermesini düzelt
     def create(self, validated_data):
         # Create the user
         user = User.objects.create_user(
@@ -29,7 +29,7 @@ class UserRegistrationSerializer(serializers.ModelSerializer):
             'access': str(refresh.access_token),
         }
 
-        # Return the user and their tokens
+
         return {
             'user': user,
             'tokens': token_data

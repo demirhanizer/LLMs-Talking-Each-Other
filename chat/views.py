@@ -12,13 +12,9 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
-from .models import LLMPersona
-from django.contrib.auth.models import User
-import json
-from django.http import JsonResponse
-
-from django.http import JsonResponse
-from .models import LLMPersona
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_simplejwt.authentication import JWTAuthentication
 
 from rest_framework import generics
 from rest_framework.permissions import IsAuthenticated
@@ -210,3 +206,35 @@ def message_exchange(request):
         return JsonResponse({'message': message_content, 'response': response_content})
 
     return JsonResponse({'error': 'Invalid request'}, status=400)
+
+@api_view(['GET'])
+@authentication_classes([JWTAuthentication])
+@permission_classes([IsAuthenticated])
+def get_all_personas(request):
+    """
+    Get all personas for the authenticated user.
+    """
+    try:
+        # Get the authenticated user from the request
+        user = request.user
+
+        # Fetch all personas associated with the user
+        personas = LLMPersona.objects.filter(user=user)
+
+        # Prepare the persona data
+        persona_data = [
+            {
+                "name": persona.name,
+                "traits": persona.personality_traits,
+                "created_at": persona.created_at,
+            }
+            for persona in personas
+        ]
+
+        # Return the personas as a JSON response
+        return Response({"personas": persona_data}, status=status.HTTP_200_OK)
+
+    except Exception as e:
+        # Catch any unexpected errors and return a response
+        return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
