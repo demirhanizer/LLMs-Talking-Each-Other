@@ -25,19 +25,14 @@ def generate_responses(model, tokenizer, test_data: List[Dict]) -> List[Dict]:
         print(f"Processing item {idx + 1}/{len(test_data)}")
         question = item['Question']
         print(f"Question: {question}")
-
-        # Tokenize the input (question)
         inputs = tokenizer(question, return_tensors="pt", padding=True, truncation=True, max_length=512)
         inputs = {key: value.to('cuda' if torch.cuda.is_available() else 'cpu') for key, value in inputs.items()}
 
-        # Generate the response using torch.no_grad() for better performance
         with torch.no_grad():
             outputs = model.generate(**inputs, max_length=100, num_return_sequences=1, pad_token_id=tokenizer.pad_token_id)
-        # Decode the generated response
         predicted_response = tokenizer.decode(outputs[0], skip_special_tokens=True)
         print(f"Predicted Response: {predicted_response}")
 
-        # Add the predicted response to the item
         item['Predicted_Response'] = predicted_response
     
     return test_data
@@ -58,7 +53,7 @@ def evaluate_responses(test_data: List[Dict]) -> Dict:
     questions = []
 
     for item in test_data:
-        if 'Predicted_Response' in item and item['Predicted_Response']:  # Only evaluate if prediction exists
+        if 'Predicted_Response' in item and item['Predicted_Response']:  
             references.append(item['Answer'])
             predictions.append(item['Predicted_Response'])
             questions.append(item['Question'])
@@ -101,7 +96,6 @@ def evaluate_responses(test_data: List[Dict]) -> Dict:
     return results
 
 def save_results(results: Dict, output_file: str):
-    """Save evaluation results to a JSON file"""
     try:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(results, f, ensure_ascii=False, indent=2)
@@ -121,7 +115,7 @@ def main():
         print("Loading the fine-tuned model and tokenizer...")
         with init_empty_weights():
             model = AutoModelForCausalLM.from_pretrained(
-                "meta-llama/Llama-3.1-70B",
+                "",
                 device_map="auto",
                 offload_folder="offload",  
                 offload_state_dict=True, 
