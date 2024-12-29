@@ -1,7 +1,6 @@
 # LLMs-Talking-Each-Other
 
-Welcome to the **LLMs-Talking-Each-Other** project, developed as part of the ENS492 graduation project. This repository explores the fascinating dynamics of communication between Large Language Models (LLMs) and demonstrates interactions both between LLMs and with users. Additionally, the project incorporates Text-to-Speech (TTS) systems to vocalize generated dialogues, enhancing the overall experience.
-
+Welcome to the **LLMs-Talking-Each-Other** project, developed as part of the ENS492 graduation project. This repository explores the  dynamics of communication between Large Language Models (LLMs) and demonstrates interactions both between LLMs and with users. 
 ## 📌 Project Objectives
 
 - Enable **LLM-to-LLM Communication**: Simulate dynamic and meaningful dialogues between multiple LLMs.
