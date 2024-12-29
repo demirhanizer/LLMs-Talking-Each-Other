@@ -16,7 +16,7 @@ model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
 predicted_file = "/cta/users/elalem2/ab/processed_responses.jsonl"
 reference_file = "/cta/users/elalem2/ab/merged_400.json"
 output_scores_file = "/cta/users/elalem2/ab/bert_scores_with_llm_and_base_modelaaaaaa.json"
-output_plot_dir = "/cta/users/elalem2/ab/"  # Tüm plotlar bu dizine kaydedilecek
+output_plot_dir = "/cta/users/elalem2/ab/"  
 
 def load_jsonl(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
