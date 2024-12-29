@@ -19,7 +19,7 @@ os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
 # Model and adapter paths
 model_id = "google/gemma-2-9b-it"
-adapter_path = "./claim_reasoning/{}"
+adapter_path = "/home/elalem/claim_questions/{}"
 
 def load_model_and_tokenizer():
     print(f"Loading tokenizer from: {model_id}")
@@ -199,18 +199,13 @@ def generate_multi_llm():
             adapter_names.append(persona_name)
 
         # Prepare the initial input
-        system_message = (
-            "Sen bir Türk köşe yazarısın. Görevin verilen iddiayı destekleyip desteklemediğini "
-            "belirtmek ve gerekçesini açıklamaktır."
-        )
+        system_message = "Sen bir Türk köşe yazarısın. Görevin sorulan soru hakkındaki fikrini ve gerekçesini açıklamaktır."
+
         conversation = []
         input_prompts = []
 
         for persona_name in selected_personas:
-            question = (
-                f"Aşağıda verilen iddiayı destekliyor musunuz? "
-                f"Lütfen yalnızca 'Evet' veya 'Hayır' olarak cevaplayın ve gerekçenizi açıklayın.\n\n{claim}"
-            )
+            question = claim
             input_prompts.append(
                 [{"role": "user", "content": f"{system_message}\n\n{question}"}]
             )
@@ -282,11 +277,11 @@ def generate():
         peft_model = PeftModel.from_pretrained(model, adapter_path_persona, adapter_name=persona_name)
         app.logger.info(f"Using adapter: {persona_name}")
 
-        system_message = "Sen bir Türk köşe yazarısın. Görevin verilen iddiayı destekleyip desteklemediğini belirtmek ve gerekçesini açıklamaktır."
-        question = f"Aşağıda verilen iddiayı destekliyor musunuz? Lütfen yalnızca 'Evet' veya 'Hayır' olarak cevaplayın ve gerekçenizi açıklayın."
+        system_message = "Sen bir Türk köşe yazarısın. Görevin sorulan soru hakkındaki fikrini ve gerekçesini açıklamaktır."
+        question = prompt
 
         input_prompt = [
-            {"role": "user", "content": f"{system_message}\n\n{question}\n\n{prompt}"},
+            {"role": "user", "content": f"{system_message}\n\n{prompt}"},
         ]
         input_ids = tokenizer.apply_chat_template(input_prompt, return_tensors="pt", return_dict=True).to("cuda")
 
