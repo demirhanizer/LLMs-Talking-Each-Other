@@ -75,7 +75,6 @@ def process_query(query):
     # Extract and return generated text
     return (outputs[0]["generated_text"][-1])
 
-# Example usage
 #query= "Türkiyede gerçekleşen 15 Temmuz darbe girişimleri demokrasiye büyük bir darbe vurma çalışması olarak değerlendirilmiştir, sizce bu konudaki fikiler ne kadar doğru?"
 query = "Amerikan başkanı Donald Trumpın yakın zamanda yaptıkları ve gerçekleştirdikleri görüşmeler hakkında yorumlarınız nelerdir?"
 response = process_query(query)['content']
