@@ -123,8 +123,8 @@ def main():
             model = AutoModelForCausalLM.from_pretrained(
                 "meta-llama/Llama-3.1-70B",
                 device_map="auto",
-                offload_folder="offload",  # Offload disk için klasör
-                offload_state_dict=True,  # State dict RAM yerine diske yüklenecek
+                offload_folder="offload",  
+                offload_state_dict=True, 
             )
 
         tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-70B")
