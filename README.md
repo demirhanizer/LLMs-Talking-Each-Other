@@ -17,7 +17,7 @@ Welcome to the **LLMs-Talking-Each-Other** project, developed as part of the ENS
 
 ## 🛠️ Technologies Used
 
-- **Large Language Models**: Powered by cutting-edge LLMs (e.g., Meta-Llama, TURKCELL-LLM, YTU-Cosmos).
+- **Large Language Models**: Powered by cutting-edge LLMs (e.g., Meta-Llama, TURKCELL-LLM, YTU-Cosmos, Gemma-2).
 - **Backend**: Flask/Django for API and model serving.
 - **Frontend**: Streamlit UI for enhanced user engagement.
 
