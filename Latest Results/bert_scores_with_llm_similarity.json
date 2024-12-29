@@ -1,0 +1,802 @@
+[
+    {
+        "instruction": "Ergin Koçyıldırım, hangi mesleği icra eden bir kişidir?",
+        "predicted_answer": "Akademisyen.",
+        "reference_answer": "Görmek için yaklaşıyorsun. Ama resim bütün renkleriyle uzaktan görülüyor. Türkiye, anayasanın kırmızı çizgilerini, muhalefetle iktidarın el sıkışmasını, Öcalan’a yapılan çağrıyı konuşurken ben bir belgesel izliyordum. Adı: Amerika Çıkmazı-Meksika Sınırından Kaçak Geçişin Gerçek Hikâyesi. Aslında yayımlanmadan önce haberdardım. ABD’de kalp doktoru olan Ergin Koçyıldırım, Türk sığınmacıların Amerikan basınında gündem olan hikâyesini anlatmaya karar vermişti.",
+        "bert_f1_score": 0.32638707756996155,
+        "semantic_similarity": 0.16369891166687012,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Belgeselin şu anda nerede izlenebileceği ile ilgili bilgi nedir?",
+        "predicted_answer": "Bu belgeselin şu anda nerede izlenebileceği ile ilgili bilgi yok.",
+        "reference_answer": "Bunun için sınırı yasadışı yollarla geçen ve hikâyesini anlatmaya karar vermiş iki Türk de bulmuştu. ABD’de sınır devriyesi başkanı olan ve yakın zamanda emekli olmuş Victor Manjarrez de “evet” demişti. Belgesel sonunda çekildi. Süreçte içinde konuştuğum için biliyorum, yayımlanacak televizyon bulamadı. Şu anda Youtube’da, Fayn Medya sayfasından izlenebiliyor. Gelelim hikâyeye...",
+        "bert_f1_score": 0.4185890257358551,
+        "semantic_similarity": 0.34014129638671875,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Belgeselde konuşan Bekir ve Abdülhamit'in ülkelerini terk etme sebepleri nelerdir?",
+        "predicted_answer": "Bekir ve Abdülhamit'in ülkelerini terk etme sebepleri işsizlik, pahalılık ve geleceksizlik olarak belgeselde belirtilmiştir.",
+        "reference_answer": "Belgeselde konuşanlar: Bekir ve Abdülhamit. İlki Tokatlı, ikincisi Ağrılı. İkisi de politik değil. İşsizliğin, pahalılığın, geleceksizliğin karamsarlığıyla ülkelerini terk eden iki gencin tek amacı ABD’ye gidip hayatlarını kazanmak. ABD sınırı nere Türkiye nere demeyin! ABD Gümrük ve Sınır Koruma Dairesi’nin resmi verilerine göre, Ağustos 2024 itibarıyla, toplam 55 bin 808 Türk vatandaşı, kaçak yollarla Meksika’dan ABD’ye girerken yakalandı.",
+        "bert_f1_score": 0.5268272161483765,
+        "semantic_similarity": 0.5114870071411133,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Türkiye'deki insan kaçakçılığı mafyasının organizasyon için kişi başı ne kadar para aldığı belirtiliyor?",
+        "predicted_answer": "Türkiye'deki insan kaçakçılığı mafyasının organizasyon için kişi başı 10-15 bin dolar aldığını belirtiliyor.",
+        "reference_answer": "Bekir ve Abdülhamit’in anlattığı hikâye ise bize, Türkiye’deki insan kaçakçılığı mafyasının nasıl enternasyonalleştiğini gösteriyor. ABD’ye kaçak giriş yapmak isteyen biri, Türkiye’de çok kolay şekilde adamını buluyor. İnsan kaçakçılığı mafyası, organizasyon için kişi başı 10-15 bin dolar alıyor. Türkler önce, e-vize ile girdikleri Meksika’ya uçakla geliyorlar. Bekir’in anlattığına göre, yola çıkarken havaalanında çektirdikleri fotoğraflar, Meksika’da kapı vizesi veren polise ulaştırılıyor. Elbette Meksika polisine de rüşvet veriliyor.",
+        "bert_f1_score": 0.6010181307792664,
+        "semantic_similarity": 0.6928811073303223,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Bekir ve Abdülhamit, Meksika’da havalimanından çıkarken ne tür bir karşılamayla karşılaştıklarını anlatıyorlar?",
+        "predicted_answer": "Bekir ve Abdülhamit, Meksika'daki havalimanından çıkarken, Beyaz Saray'a ulaştığında Biden'ın Arınç'ı kapıda karşılamasıyla karşılaştılar.",
+        "reference_answer": "Öyle ki... Son aşamada pasaportun arasına sıkıştırılan yüzer dolarlarla bu iş çözülüyor. Yetmiyor, geçiş sonrası da takip altına alınan Türkleri, polisin biraz daha rüşvet diyerek yolması bir klasik. O kadar olağanlaşmış ki. Bekir ve Abdülhamit, Meksika’da havalimanından çıktıklarında, kendilerini Meksikalı taksicilerin Türkçe müşteri çağrılarının karşıladığını anlatıyor. Sonrasında Türkiye’deki mafyanın Meksika ayağı işi devralıyor.",
+        "bert_f1_score": 0.5382212400436401,
+        "semantic_similarity": 0.5034723281860352,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Sınıra kadar taşınan Türkler, sınırda neyle karşılanıyor?",
+        "predicted_answer": "Sınırda karşılanıyorlar ve nihayetinde tutuklanıyorlar.",
+        "reference_answer": "Sınıra kadar taşıdıkları Türkleri, uygun yerde, “şimdi koşun” diyerek ABD sınırına bırakıyor. Nehri ve sınır duvarını geçen Türkleri, karşıda Amerikan polisi karşılıyor. Önce neredeyse üstüste kaldıkları insanlık dışı toplama kampına, ardından bileklerinde pranga ve kelepçeyle hapishaneye götürüyorlar. 3-4 aylık tutukluluğun ardından ilk mahkemelerine çıkarılıyorlar. Kefalet ödeyerek ve bir de ABD vatandaşı sponsor bularak tutuksuz yargılanma hakkı kazanıyorlar. Öyle bir organizasyon ki...",
+        "bert_f1_score": 0.4857265055179596,
+        "semantic_similarity": 0.672649621963501,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "ABD cezaevlerinde şu an kaç Türk'ün bulunduğu bilgisi nedir?",
+        "predicted_answer": "Bu bilgiye ulaşamadım.",
+        "reference_answer": "ABD’li sponsoru bile ekstra ücret karşılığı Türkiye’deki çete ayarlıyor. Sınırı geçenler kaldıkları hapishaneden bile çete üyelerini aramaya devam ediyor. Manjarrez’in verdiği bilgiye göre, şu an ABD cezaevlerinde, 8-10 bin civarında sınırı aşmış Türk var. Yolda ölenler, sözlü, fiziksel ya da cinsel tacize uğrayanlar... Hiç bilmedikleri çileli yolculuğun sonunda tutuksuz yargılanma hakkı alanlar sığınma başvurusu yapıyor. Elbette bu durumda geldikleri ülkenin demokrasisini kötülemeleri, etnik, dinsel ya da cinsel ayrıma uğradıklarını söylemeleri bekleniyor.",
+        "bert_f1_score": 0.3282291889190674,
+        "semantic_similarity": 0.013572201132774353,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Ağustos 2024 tarihi itibarıyla sınırdan geçen Türk ailelerin sayısı nedir?",
+        "predicted_answer": "Ağustos 2024 tarihi itibarıyla sınırdan geçen Türk ailelerin sayısı 9 bin 956'dır.",
+        "reference_answer": "Gelenlerin çoğunun derdi ekonomi olsa da siyasi gerekçe bulmak zorunda kalıyorlar. Bu süreçte de asgari ücretin bile altında çalışıyor, barınaklarda yaşıyorlar. Uzun yargılamanın sonunda ise yüzde 90’ı hakkında sınırdışı kararı alınıyor. Belgeselde yok ama Koçyıldırım’dan bir bilgi daha öğrendim. Resmi verilere göre, Ağustos 2024 tarihi itibarıyla, sınırdan 9 bin 956 Türk aile en az bir çocuğu ile geçmiş. 483 çocuk ise yanında ailesi ya da refakatçisi olmadan tek başına bunu yapmış.",
+        "bert_f1_score": 0.5353649258613586,
+        "semantic_similarity": 0.7026029229164124,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Ülkemizde geleceğinin kalmadığını düşünen kaç genç ve çocuk bulunmaktadır?",
+        "predicted_answer": "Bu sorunun cevabını veremiyorum çünkü ek bilgi soruyla alakalı değil. Lütfen ek bilgiyi soruyla alakalı hale getirebilir misiniz?",
+        "reference_answer": "Ülkemiz adına çok acı bir rakam! Ülkede geleceğinin kalmadığını düşünen binlerce genç, hatta çocuk. Kolayca ulaştıkları ve para verip hayatlarını emanet ettikleri mafya. Türk çetelerin Meksika ve ABD’ye uzanan organizasyonu. Sadece insan gibi yaşama umudu için binlerce kilometre ötedeki sınırda, kamplarda, hapishanelerde geçirilen; ölüm ya da taciz tehlikesi altındaki yaşamlar. Sadece ABD değil tüm gelişmiş ülkelerde, kaçak Türklerin verileri en önlerde seyrediyor.",
+        "bert_f1_score": 0.3261532783508301,
+        "semantic_similarity": 0.10467959940433502,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Anayasa-normalleşme-dış tehdit tartışmalarının halkın trajedisinin üstünü örtmek için yapıldığı yazıda hangi durumlar vurgulanıyor?",
+        "predicted_answer": "Muhalefet, iktidarın topluma derinden hissettirdiği güvenlik talebini hafife aldı ve güvenlik-demokrasi/özgürlük dengesi etrafında ikna edici bir gündem oluşturamadı. CHP-HDP koalisyonu söylemi etkili oldu, ancak karşılık verilemedi. Kürtleri incitmeden milliyetçi seçmenin yatıştırılması da mümkündü.",
+        "reference_answer": "Açık bir gerçek var ki anayasa-normalleşme-dış tehdit tartışmaları halkın trajedisinin üstünü örtmek için yapılıyor. Ekonomisi çökmüş, güvenliği mafyaya teslim edilmiş, ordusuyla yargısıyla kurumları bizzat anayasaya uymayan iktidar tarafından çökertilmiş ülkeyi bekleyen tehlike ta Meksika sınırından görülüyor. Umudu tükenmiş Türkler; artık gelişmiş ülkelerin sınırlarında, kimi ekonomik kimi demokratik nedenlerle, Suriye ya da Iraklılarla birlikte, ölümle cebelleşiyor. Bu tabloyu değiştirmenin önündeki engel, mevcut anayasa ve kırmızı çizgileri değil. Ülkeyi bu hale getirenlerin kendisi. Bu basit gerçekten kurtuluş reçetesi çıkaramayan politikasız muhalefetin, anayasa tiyatrosunda figüran olması, yurttaşların belki de en büyük kadersizliği!",
+        "bert_f1_score": 0.4167894721031189,
+        "semantic_similarity": 0.57448410987854,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Ayağını bastığımız toprakta yaşamanın hak olduğunu ne zaman anlayacağız?",
+        "predicted_answer": "Ayağımızı toprağımıza bastığımız gün başka toprakların hikâyelerini de anlamaya başlayacağız.",
+        "reference_answer": "Ayağını bastığımız toprakta yaşamanın hak olduğunu anladığımız gün uzak sınırlarda ölüp gitmeyeceğiz.",
+        "bert_f1_score": 0.6218745112419128,
+        "semantic_similarity": 0.6484013795852661,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Dünyanın en kötü insanı olduğu düşünülen kişiler arasında kimler vardır?",
+        "predicted_answer": "Soru: Dünyanın en kötü insanı olduğu düşünülen kişiler arasında kimler vardır?\n\nCevap: Bu pasajda, \"milletin kendisine emanet ettiği üniformayı başkalarına kiralayanların\" ve \"hırsızlardan da katillerden daha aşağılık\" olarak tanımlanan kişileri kastediyor.",
+        "reference_answer": "Dünyanın en kötü insanı kimdir? Kimi katili kimi hırsızı gösterir. Ben bilmiyorum. Ama milletin kendisine emanet ettiği üniformayı başkalarına kiralayanların, hırsızlardan da katillerden de daha aşağılık olduğunu düşünüyorum. Önce haberi verelim...",
+        "bert_f1_score": 0.6510536670684814,
+        "semantic_similarity": 0.8818393349647522,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "Adnan Oktar örgütü ile ilişkileri nedeniyle yargı önüne çıkarılacak olan savcı ve hâkimlerin isimleri kimlerdir?",
+        "predicted_answer": "Savcı ve hâkimlerin isimlerini verilmedi.",
+        "reference_answer": "Yargıtay 5. Ceza Dairesi resmen açıkladı. Adnan Oktar örgütü ile ilişkileri nedeniyle savcı ve hâkimler ilk kez yargı önüne çıkarılacak. Dairenin duyurusuna göre eski İstanbul Cumhuriyet Başsavcısı Hadi Salihoğlu, İstanbul Bölge Adliyesi 1. Ceza Dairesi eski üyeleri Ahmet Mahnaoğlu, Derya Bayburtluoğlu, Reyhan Yaman ve dairenin eski savcısı Ali Parlar resmen sanık oldu.",
+        "bert_f1_score": 0.44414693117141724,
+        "semantic_similarity": 0.4341071844100952,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Önümüzdeki günlerde görülecek duruşmalarda kaç kişi müşteki olarak yer aldı?",
+        "predicted_answer": "Yedi kişi.",
+        "reference_answer": "Önümüzdeki günlerde görülmeye başlanacak duruşmalarda, örgütün mağdur ettiği yedi kişi de müşteki olarak yer aldı. Sanıklara savcı ve hâkimlik görevini, örgütün çıkarları için kullanma suçlamasında bulunuluyor. Böylece Oktar örgütünün cezasının Yargıtay’da kesinleşmesinin ardından, örgütün yargıdaki ayaklarına da ilk dava açıldı. Gelelim detaylara... Aslında onu da ilk kez bu köşede okumuştunuz.",
+        "bert_f1_score": 0.3666832149028778,
+        "semantic_similarity": 0.37164586782455444,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Üç HSK müfettişi, Oktarcıların yargıdaki ilişkileri hakkında ne kadar sayfalık bir rapor yazmıştı?",
+        "predicted_answer": "Üç HSK müfettişi, Oktarcıların yargıdaki ilişkileri hakkında 680 sayfalık bir rapor yazmıştı.",
+        "reference_answer": "18 Ocak 2024’te yazmıştım. Üç HSK müfettişi, Oktarcıların yargıdaki ilişkileri hakkında 680 sayfalık bir rapor yazmıştı. Mahkeme kâtibinden itirafçılara kadar tam 140 kişiyle görüşmüştü. Soruşturma yapılan yargı mensuplarının ve yakınlarının mal varlıkları incelenmiş, telefon kayıtlarına bakılmıştı. Eski başsavcı Hadi Salihoğlu ve ilgili dairenin savcısı Ali Parlar’ın Oktarcılarla organik ilişkisi, Salihoğlu’nun geçmişte Oktarcılar aleyhindeki dosyaları kapattığı resmi rapora yansımıştı.",
+        "bert_f1_score": 0.655571460723877,
+        "semantic_similarity": 0.7663087844848633,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "HTS kayıtlarına göre, Ali Parlar, Önder Yaman ve Hadi Salihoğlu'nun örgüt lehine verilen karar sürecinde kimlerle telefon trafikleri görülmüştü?",
+        "predicted_answer": "Ali Parlar, Önder Yaman ve Hadi Salihoğlu'nun örgüt lehine verilen karar sürecinde örgüt sanıkları ve avukatları ile telefon trafiği görüldü.",
+        "reference_answer": "İncelenen HTS kayıtlarından Ali Parlar, Önder Yaman ve Hadi Salihoğlu’nun, örgüt lehine verilen karar sürecinde, örgüt sanıkları ve avukatları ile telefon trafikleri görülmüştü. Mübaşir tanık G.Ü., verdiği ifadede, kararın mahkeme dışında yazılıp getirildiğini ikrar eder şekilde konuşmuştu. Mahkemenin daha önce verdiği 4100 kararı inceleyen müfettişler, ilk kez, delil incelemeden, duruşma açmadan, kimseyi dinlemeden böyle bir karar verildiğini tespit etmişti. Mahkemenin operasyon sabahı polise açılan ateş için “uyku sersemi” kararı vermesi, silahı da iade etme kararı almasının hukukta görülmemiş bir uygulama olduğu sonucuna varılmıştı. Örgüt üyelerini serbest bırakarak yurtdışı yasaklarının kaldırılması sonucu sekiz sanığın kaçtığı ve üç sanığın yurtdışına firar ettiği not edilmişti.",
+        "bert_f1_score": 0.599953830242157,
+        "semantic_similarity": 0.7215332984924316,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "Mahkemenin kararının altında yatan sorunlar nelerdir?",
+        "predicted_answer": "Mahkemenin kararının altında yatan sorunlar şunlardır:\n\n1. İfade özgürlüğünün kısıtlanması: Ankara 9. İdare Mahkemesi, Milli Savunma Bakanlığı ile Belhan arasındaki davada Belhan'ın lehine karar verdi. Bu karar, ifade özgürlüğünün kısıtlanmasına yol açabilir.\n2. Bağlamdan koparılmış değerlendirmeler: AYM'nin \"İfadelerin bağlamından kopartılarak bütün olarak değerlendirilmemesi\" konusundaki ikinci kararı, Öcalan ile ilgili bir karardır. Bu karar, Öcalan'a övgü içeren şiir kitapları nedeniyle yargılanan bir kişinin ifade özgürlüğünün engellendiğine karar vermiştir.\n3. Tazminat ödenmesi: AYM'nin kararına göre, yazara tazminat ödenmesi kararı çıkmıştır. Bu karar, ifade özgürlüğünün kısıtlanmasına yol açabilir ve yargı sisteminin adaletini sorgulamaya yol açabilir.\n4. Yargı sisteminin adaleti: Türkiye'de yargı sisteminin adaleti sorgulanabilir. AYM'nin",
+        "reference_answer": "Mahkemenin karar dışında bırakılan kıdemli üyesi, kararı veren üç hâkime, şaşkınlıkla, “Hep sanık lehine düşünmüşsünüz, mağdur dosyada hiç yok gibi davranmışsınız, ahlaklı bir sanık avukatı bile sizin yazdığınızı yazmamıştır” demişti. Küçücük kızların ifadeleri tek tek incelenmiş, toplu tecavüz eylemlerine “rızası var” kararı vermek için, hâkimlerin cımbızlama yaptığı, dosyada olmayan delilleri kullandığı görülmüştü. Öyle ki itirafçıların kabul ettiği suçları bile yok sayılmıştı. En önemlisi, tam da karar sürecinde, sözü edilen yargı mensuplarının, kendileri ve yakınları üzerinden, olağandışı zenginleştikleri tespit edilmişti. Sanıkların örgüte destek faaliyetleri nedeniyle yargılanması istenmişti.",
+        "bert_f1_score": 0.43814733624458313,
+        "semantic_similarity": 0.46206843852996826,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Yargılanacak olan isimler hangi kurumda yargılanacak?",
+        "predicted_answer": "Yargılanacak olan isimlerin yargılanacağı kurum adli yargıdır.",
+        "reference_answer": "İşte o isimler yargı mensubu olduğu için, herhangi bir adliyede değil, Yargıtay’da yargılanacak. Bütün bunların beni ilgilendiren bir yanı var. Hayır, bu kez bir gazeteci olarak sadece yargılanmayı beklemiyorum. Son dönemdeki moda deyimle “yargısal aktivizm” de yapıyorum. Şöyle ki...",
+        "bert_f1_score": 0.4418829381465912,
+        "semantic_similarity": 0.5968096852302551,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Yazar, Oktar örgütünün yargı ayağı olduğunu ne zaman yazmaya başlamıştır?",
+        "predicted_answer": "Yazar, Oktar örgütünün yargı ayağı olduğunu 2014 yılında yazmaya başlamıştır.",
+        "reference_answer": "HSK raporundan da önce... Yargıtay duyurusundan da önce... Yıllar önce... Ben, bu köşede, defalarca Oktar örgütünün yargı ayağı olduğunu yazmıştım. Buna dayanak olarak da örgütün ele geçirilen arşivini ve davada tanık olan itirafçı, tanık, müşteki ifadelerini göstermiştim.",
+        "bert_f1_score": 0.49547669291496277,
+        "semantic_similarity": 0.5423476696014404,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Eski Başsavcı Hadi Salihoğlu, yargıyı nasıl her seferinde konuya taşıdı?",
+        "predicted_answer": "Eski Başsavcı Hadi Salihoğlu, yargıyı konuya her seferinde taşıdı.",
+        "reference_answer": "Sadece bunları ortaya koyarak 30 yıldır şehrin göbeğinde faaliyet yürüten yapının yargıdan kurtulmasının sebebinin yargı içinde de aranması gerektiğini söylemiştim. İşte o yazılardan sonra eski Başsavcı Hadi Salihoğlu konuyu her seferinde yargıya taşıdı. Bir zamanlar yönettiği İstanbul Adliyesi’ne avukatı aracılığıyla beni şikayet etti. Eski çalışma arkadaşı olan hâkimler yazılarıma erişim engeli aldırdı. Mahkemeden çıkarılan tekzip kararları bu köşede yayımlandı.",
+        "bert_f1_score": 0.5252987742424011,
+        "semantic_similarity": 0.7154414057731628,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Savcı, hangi suçlamayla iddianame yazdı?",
+        "predicted_answer": "Savcı, Mert G'yi casusluk ve rüşvet suçlarından kovuşturmaya yer olmadığına karar vermiştir.",
+        "reference_answer": "Yetmedi, savcı, “kamu görevlisine hakaret” suçlamasıyla iddianame yazdı. Sona gelen duruşmalarda, duruşma savcısı, hapis cezası almamı talep etti. Bütün bunlar yaşanırken, ben yargı önünde “sürünürken”, hem HSK raporu hem de Yargıtay’daki yargılama beni teyit etti. Ancak yazdıklarımın başına gelenler trajikomik bir fotoğraf olmakla kalmadı. Yargının içindeki güçlere dokunduğunuz zaman yargının elindeki gücü nasıl kötüye kullandığını da gösterdi.",
+        "bert_f1_score": 0.4351712465286255,
+        "semantic_similarity": 0.4600774645805359,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Cumhuriyet gazetesinin avukatı Enes Ermaner hangi iki kuruma şikâyet dilekçesi vermiştir?",
+        "predicted_answer": "Enes Ermaner, HSK'ye ve İstanbul Cumhuriyet Başsavcılığı'na şikâyet dilekçesi verdi.",
+        "reference_answer": "“Olan oldu” demedim. Cumhuriyet gazetesinin avukatı Enes Ermaner, hem HSK’ye hem İstanbul Cumhuriyet Başsavcılığı’na şikâyet dilekçesi verdi. Hâkimler Ö.D. ve R.Ç. ile Savcılar H.K.",
+        "bert_f1_score": 0.7123234272003174,
+        "semantic_similarity": 0.8021707534790039,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Müvekkiliniz hangi nedenle Adnan Oktar Silahlı Suç Örgütü hakkında hukuki ve cezai işlem talep etmiştir?",
+        "predicted_answer": "Müvekkiliniz, Adnan Oktar Silahlı Suç Örgütü hakkında hukuki ve cezai işlem talep etmiştir çünkü müvekkilinin bir gazeteci olarak kamu yararı doğrultusunda yapmış olduğu haberler nedeniyle yargı mensupları Adnan Oktar Silahlı Suç Örgütü lehine hareket etmişlerdir.",
+        "reference_answer": "ve T.K.U’dan şikayetçi oldu. Dilekçenin konu bölümünde şu yazıyor: “Müvekkilimiz tarafından, bir gazeteci olarak Adnan Oktar Silahlı Suç Örgütü hakkında kamu yararı doğrultusunda yapmış olduğu haberler nedeniyle hakkında hukuki ve cezai işlem tesis ederek Adnan Oktar Silahlı Suç Örgütü lehine hareket eden yargı mensupları hakkındaki şikayet dilekçemizdir.” Sonucun ne çıkacağını duyuracağım... Kumaşını ipliğin değil milletin değerli kıldığı üniformalar arındığı gün, adalet suçlulara değil bize yakın olacak.",
+        "bert_f1_score": 0.662310004234314,
+        "semantic_similarity": 0.8133015632629395,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Şûra ne anlama geliyor ve sistemin tek kişilik rejime dönüşmesiyle ne gibi değişiklikler yaşanıyor?",
+        "predicted_answer": "Şûra, bir grup veya topluluğun bir konuyu tartışmak ve karar vermek için bir araya gelmesidir. Sistem tek kişilik bir rejime dönüşürken şura sisteminden parlamenter sisteme geçiş yapılarak hükümetin kontrolü tek bir kişiye veriliyor ve bu durum şura sisteminin ilkelerine aykırı oluyor.",
+        "reference_answer": "“Şûra” diyoruz. Özünde “danışma” demek. Çok akılla düşünmeye dayanıyor. Eğrisi doğrusunu buluyor. Sistem tek kişilik rejime dönüştükçe, biat liyakatin yerini aldıkça, şûra da terk ediliyor. Savaştan çıkmış çiçeği burnunda Cumhuriyet yolunu şûralarla çizerken 100. yaşında şûrasızlaşıyor.",
+        "bert_f1_score": 0.5272158980369568,
+        "semantic_similarity": 0.6107906699180603,
+        "llm_evaluation": 0.6
+    },
+    {
+        "instruction": "Geçen hafta Yüksek Askeri Şûra (YAŞ) kararları neden sessiz sedasız geçti?",
+        "predicted_answer": "Geçen hafta Yüksek Askeri Şura (YAŞ) kararları sessiz sedasız geçti çünkü YAŞ'ta Akar damgası vardı.",
+        "reference_answer": "Geçen hafta Yüksek Askeri Şûra (YAŞ) kararları sessiz sedasız geçti. Oysa yanı başımızda savaş tehdidi yükselirken, 3. dünya savaşı konuşulurken, en önemlisi YAŞ hataları sonucunda 15 Temmuz dahil bir dizi acı yaşamışken meseleyi daha ciddiye almamız gerekmez mi? Şûra dediğime bakmayın. Değişeli çok oldu. Milli eğitimin sitesini açıyorum. “Bakan Tekin YAŞ toplantısına katıldı” açıklamasını görüyorum.",
+        "bert_f1_score": 0.5973671078681946,
+        "semantic_similarity": 0.7035915851593018,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "15 Temmuz sonrası YAŞ sisteminde ne gibi değişiklikler yaşanmıştır?",
+        "predicted_answer": "15 Temmuz sonrası YAŞ sisteminde yapılan değişikliklerden biri, yargı kurumunda 4 bin civarında hâkim ve savcının FETÖ iddiasıyla ihraç edilmesiydi. Bu durum Türk yargısı için en büyük dönüm noktalarından biri olan 12 Eylül 2010 referandumundan bu yana ilk kez böyle bir şey yaşandı.",
+        "reference_answer": "Müfredatı oldubittiyle değiştiren bakan, askeri şûrada el kaldırıyor. Bunun bir nedeni var. 15 Temmuz’dan sonra aşama aşama YAŞ sistemi dönüştü. Son olarak 15 Temmuz 2018 tarihli kararnameyle cumhurbaşkanı dışında 7 hükümet üyesi ve 4 asker üye haline geldi. Yetmedi... Terfileri belirleyen madde de değişince askerlerin YAŞ’ta sadece adı kaldı. “Komutanım beni neden emekli ettiniz?” diyen askere, kuvvet komutanının “Önümden rüzgâr gibi geçti, görmedim bile” dediği anlatılıyor.",
+        "bert_f1_score": 0.4613501727581024,
+        "semantic_similarity": 0.4721144735813141,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Terfilerde siyasetin etkisi ile ilgili yazıda hangi ifadelerin sicillere yazıldıkları belirtilmiştir?",
+        "predicted_answer": "Sicillere yazıldığı belirtilen ifadeler şunlardır: \"Terfi etmeli (eşi türbanlı), hükümet yanlısı.\"",
+        "reference_answer": "Terfilere siyaset karar verince herkes siyasetten adam arar hale geldi. Bir zamanlar askerlerin sicillerine yazılan notlar garipleşti. Daha önce okudunuz, “Terfi etmeli (eşi türbanlı), hükümet yanlısı” gibi ifadeler sicillere yazıldı. Son YAŞ’tan sonra neler oldu diye merak ettim. TSK’deki terfileri yakından inceleyen askerleri dinleyerek notlarımı aldım. Şöyle aktarayım: - Terfi edenleri toptan iyi ya da kötü diye değerlendirmek mümkün değil. Ancak bütüne baktığımızda ciddi problemler göze çarpıyor.",
+        "bert_f1_score": 0.5533820986747742,
+        "semantic_similarity": 0.6595621109008789,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Terfi sistemi hangi üçlü yapıdan oluşmaktadır?",
+        "predicted_answer": "Terfi sistemi üçlü yapıdan oluşur: AKP, FETÖ ve Norşin Medresesi.",
+        "reference_answer": "- Terfi sisteminin üçlü bir yapıdan çıktığı anlaşılıyor. Biri Milli Savunma Bakanlığı içinde doğrudan Saray’a bağlı siyasi bürokrasi. AKP mensubu siyasi bürokrasi ellerindeki notlarla bazı askerlerin kaderine karar vermiş. İkincisi Milli Savunma Üniversitesi’ni yöneten ekip. Onlar da kurulan yeni düzende söz sahibi. Üçüncü ayak ise “hamallar”. Yani TSK’nin yükünü çektiği için “Terfi ettirelim işi bitince göndeririz” dedikleri askerler.",
+        "bert_f1_score": 0.4774795472621918,
+        "semantic_similarity": 0.6702147126197815,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Balyoz kumpası mağduru Levent Ergün'ün hangi rütbeye terfi ettiği belirtilmiştir?",
+        "predicted_answer": "Balyoz kumpası mağduru Levent Ergün orgeneral terfi etmiştir.",
+        "reference_answer": "Haliyle siyaset, adamcılık ve bir miktar da bize lazımcılık kadro yapısını şekillendirmiş. - Balyoz kumpası mağduru Levent Ergün’ün orgeneral olması elbette ki doğru bir karardı. Ancak bu karar ön plana çıkarılıp medyaya servis edilerek diğer önemli noktaların gözden kaçırılması hedeflendi. - Binali Yıldırım’a komik karşılama şovu yapan askerin, ihbar uçağına seccade atarak namaz kılma gösterisiyle konuşulan havacı askerin, TSK’de Vahdettin övgüleriyle gündeme gelen askerin, hac ziyaretinde protokol isteyen askerin kararları konuşulmadı. - Birilerinin adamı veya siyaset-tarikat referansı sayesinde terfi eden çok asker var. Hatta geçen sene olduğu gibi bu sene de FETÖ iltisaklı subaylardan terfi edenler var. Darbe girişimi gecesi nerede oldukları ve kimlerle irtibat kurdukları araştırılsa belki de gerçekler ortaya çıkarılabilecekti.",
+        "bert_f1_score": 0.47670668363571167,
+        "semantic_similarity": 0.5699306726455688,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Yazıda belirtilen terfi süreçleriyle ilgili olarak, hangi askeri rütbeye terfi edilen kişi bir süre boyunca suya sabuna dokunmadan görev yapmıştır?",
+        "predicted_answer": "Tuğgeneral B.Ç.",
+        "reference_answer": "Yapılmayıp terfi ettirilmişler. - Birilerini sıçrama taşı yerlerden terfi ettiriyorlar. Bir örnek: Kara Kuvvetleri Karargâhı’ndan terfi ediyor ve tuğgeneralliğini üç yıl Milli Savunma Üniversitesi’nde suya sabuna dokunmadan tamamlayıp tümgeneral oluyor. Yani tugay görmeden tümgeneral yapılıyor. - X okulu komutanı beş yıldır görev yapmaktaydı ve bu sene korgeneral yapıldı. Ankara’da beş yıl görev ve sonrasında terfi... Bu konuda asıl önemli olan bir husus daha var.",
+        "bert_f1_score": 0.36769041419029236,
+        "semantic_similarity": 0.5078332424163818,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Tuzla Piyade Okulu'ndaki tarikatçı teğmenler skandalında asıl hesap sorulması gereken kişi kimdir?",
+        "predicted_answer": "Yılmaz Alp Güçlü.",
+        "reference_answer": "O da Tuzla Piyade Okulu’ndaki tarikatçı teğmenler skandalında bu komutanın katkısı. Çok basit bir şekilde izah etmek gerekirse, bu teğmenler Piyade Okulu’nda Harp Okulu’na göre çok daha az süre geçirmişken, olay Piyade Okulu komutanı ve oradaki personele yüklendi. Asıl hesap sorulması gereken kişi olan bu tarikatçı teğmenlerin yıllarını geçirdiği Harp Okulu’nun sorumlusuna hiçbir hesap sorulmadığı gibi ödüllendirilerek korgeneral yapıldı. - Bundan önceki YAŞ’larda olduğu gibi bu YAŞ’ta da terfi ettirilen kurmay subay sayısının az olması dikkat çekici. Bir ordunun kurmay aklı ne kadar güçlü olursa ordunun savaş kazanma ihtimali o kadar yüksek olur. Kara Kuvvetlerinde 2021’de terfi eden 37 generalin 5’i kurmay subay, 2022’de terfi eden 28 generalin 8’i kurmay subay, 2023’te terfi eden 40 generalin 16’sı kurmay subay, 2024’te terfi eden 47 generalin 13’ü kurmay subay. Süreç böyle devam ederse müteakip dönemde TSK’de kurmaylık sınavına girmek isteyen personel zor bulunur.",
+        "bert_f1_score": 0.2626779079437256,
+        "semantic_similarity": 0.30588001012802124,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "15 Temmuz sonrası hangi albayların emekli edildiği belirtilmiştir?",
+        "predicted_answer": "Semih Terzi ve iki FETÖ mensubu tugay komutanı emekli edildi.",
+        "reference_answer": "- Gölgede kalan ise emekli edilen albaylar. Kimse onları konuşmadı. 15 Temmuz sonrası Karargâh Subaylığı Sınavı’nı (KARSU) bitirip kurmay olmuş, daimi göreve seçilmiş, gelecek vaat eden, birikimli albaylardan sürpriz şekilde emekli edilenler var. Mecburi hizmeti olduğu halde veya daha hizmet yılı olduğu halde Atatürkçülüğüyle bilinen albaylardan emekli edilenler var. Herkesin kişisel sayfasında bildirim yapıldığından tam fotoğrafı öğrenmek zor. Ancak durumunu anlatanları toplayınca az çok görülüyor. Referansını bulamayan ordudan koparılmış.",
+        "bert_f1_score": 0.3985626697540283,
+        "semantic_similarity": 0.61558997631073,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Görev süreleri uzatılan tümgenerallerin kaçı sınıf subayıdır?",
+        "predicted_answer": "Soruya göre tümgenerallerin kaçı sınıf subayıdır? Cevap: 2020 yılında yaklaşık 700 civarında albay emekli edilmişti.",
+        "reference_answer": "- Mesela görev süreleri uzatılan 5 tümgeneralin 4’ü sınıf subayı. Acaba bir kanun değişikliği beklendiği için mi uzatıldı? Yoksa belirli bağlantıları sayesinde görevlerinde kalabildikleri kadar kalsınlar mı istendi? - TSK tarihinde bir ilk olarak bir bandocu albay general yapıldı. Belki de yeni bir model olacak. İlginç bir detay, izleyip görmeli. - TSK’nin liyakati esas alan bir YAŞ sistemine derhal geçmesi ve siyaset-tarikat-referans denkleminden ivedilikle kurtarılması gerekiyor.",
+        "bert_f1_score": 0.46060335636138916,
+        "semantic_similarity": 0.6518004536628723,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Askerlikteki sorunların hangi faktörlere dayandığı belirtilmiştir?",
+        "predicted_answer": "Askerlikteki sorunların hava koşulları ve görüş mesafesinin 5 metreye kadar düşmesi gibi faktörlere dayandığı belirtilmiştir.",
+        "reference_answer": "Notlar uzayıp gidiyor... İsimlerden çıkıp sisteme bakıldığında sorun daha net görülüyor. On yıllarca eğitimle, zorlu deneyimle, ölümle sınanan askerlik sonunda gelip tarikat, siyaset, adam referansına dayanıyor. Siyaset ordulaşırken ordunun siyasallaşması ülke için çözülme alarmı demek. Danışmanın danışana yük olmadığını gördüğümüzde ülke kurumlarla, kurumlar insanlarla yükselecek. Not: Bir tatil molası veriyorum. “Kör Nokta” görünmeyeni göstermeye devam edecek.",
+        "bert_f1_score": 0.38402655720710754,
+        "semantic_similarity": 0.37086641788482666,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "MOSSAD’ın Tahran’ı izlemesi ve İsrail’in İran sınırını geçip operasyon yapabilmesiyle ilgili olarak, HAMAS lideri İsmail Haniye neden öldürüldü?",
+        "predicted_answer": "Soruya ve ek bilgilere göre İsmail Haniye'nin öldürülmesi MOSSAD'ın Tahran'ı izlemesi ve İsrail'in İran sınırını geçip operasyon yapabilmesiyle ilgili değil. Haniye'nin öldürülmesi İsrail tarafından gerçekleştirilen bir suikast sonucu gerçekleşti. MOSSAD'ın Türkiye'de HAMAS hakkında istihbarat toplama yöntemleri sorusu sorulan soruya ve ek bilgilere uymuyor. Bu nedenle bu soruya cevap veremem.",
+        "reference_answer": "Sadece ağrıyı konuşanlar büyük hastalıkları da ıskalarlar. HAMAS lideri İsmail Haniye, Tahran’da İsrail suikastıyla öldürüldü. Görünür iki bilgi var: Bir, MOSSAD’ın Tahran’ı izlemesi. İki, İsrail’in İran sınırını geçip operasyon yapabilmesi. Peki, MOSSAD Türkiye’de HAMAS hakkında nasıl istihbarat topluyor?",
+        "bert_f1_score": 0.649928867816925,
+        "semantic_similarity": 0.8264073133468628,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "İstanbul Cumhuriyet Başsavcılığı’nda kaç kişi hakkında iddianame düzenlendi?",
+        "predicted_answer": "İstanbul Cumhuriyet Başsavcılığı'nda 1 kişi hakkında iddianame düzenlendi.",
+        "reference_answer": "Hatırlayın, medyada günlerce yer buldu. Türkiye’deki operasyonlarla MOSSAD’ın hücreleri çökertilmiş, yakalananlar mahkemeye çıkarılıp tutuklanmıştı. İşte o operasyonların sonucunda, İstanbul Cumhuriyet Başsavcılığı’nda tam 57 kişi hakkında bir iddianame düzenlendi. Sanıklara \"Devletin Gizli Kalması Gereken Bilgilerini Siyasal veya Askeri Casusluk Amacıyla Temin Etme\" suçlaması yöneltildi. İşin ilginci, sanıkların bir kısmı Suriyeli, Filistinli, Afgan, Lübnanlı’ydı.",
+        "bert_f1_score": 0.5436710715293884,
+        "semantic_similarity": 0.5905981063842773,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "İsrail istihbarat servisi MOSSAD, Türkiye’ye gelmeden önce hangi yöntemlerle bilgi toplamaya başlamıştır?",
+        "predicted_answer": "MOSSAD, İsrail'de bir operasyon ekibi kurdu ve Türkiye'de bazı kişiler aracılığıyla ülke içinden bilgi toplamaya başladı.",
+        "reference_answer": "Türkiye’nin nasıl bir dönüşüm geçirdiğinin göstergesi gibiydi. İşte o iddianame İstanbul 28. Ağır Ceza Mahkemesi tarafından iki kez reddedildi, sonra kabul edildi. Önce iddianame… Savcılık tespitlerine şöyle başlamış: \"İsrail istihbarat servisinin, internet tabanlı mobil uygulamalar üzerinden uzaktan/çevrimiçi operasyon ekibi oluşturduğu, söz konusu operasyon ekibi vasıtası ile uzaktan kaynak temini, canlı kurye ile kaynaklarına para transferi ve sahadaki hedeflerine yönelik taktik bazda isler yapılmasının amaçlandığı…\" Kısacası MOSSAD, İsrail’de bir operasyon ekibi kurmuş. Türkiye’ye gelmeden ancak Türkiye’de bazı isimler aracılığıyla ülke içinden bilgi toplamaya başlamış.",
+        "bert_f1_score": 0.6065851449966431,
+        "semantic_similarity": 0.723750114440918,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "İddianamede, MOSSAD'ın ülkemizde hangi suçları işlemeyi tasarladığı değerlendirilmektedir?",
+        "predicted_answer": "İddianamede, MOSSAD'ın ülkemizde cinayet, adam kaçırma, tehdit/şantaj gibi suçları işlemeyi tasarladıkları değerlendirilmektedir.",
+        "reference_answer": "Söz konusu sanıklar da işte bu ağa takılmışlar. Kimler hakkında bilgi toplanmış? İddianame yanıt veriyor: \"İsrail'in Filistin politikasına muhalif Filistinli aktivistler başta olmak üzere ülkemizdeki Ortadoğulu şahıslara ve anılanlarla bağlantılı vatandaşlarımıza yönelik…\" Bu bilgilerin Türkiye’ye maliyeti ne olabilir? İddianamede şöyle yorumlanıyor: \"(MOSSAD’ın) ülkemizde cinayet, adam kaçırma, tehdit/şantaj gibi suçları işlemeyi tasarladıkları değerlendirilmektedir. (…) Eylemin devletimiz aleyhine; -Ülke topraklarında mukim yabancı şahısların kişisel verilerinin korunamadığı, can güvenliğinin sağlanamadığı vb.",
+        "bert_f1_score": 0.6152471899986267,
+        "semantic_similarity": 0.506949782371521,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "Haniye suikastının benzerlerinin Türkiye'de gerçekleştirilmesi için hangi kişilerin hakkında bilgi toplandığı belirtilmiştir?",
+        "predicted_answer": "İddianamede belirtilenlere göre Haniye suikastının benzerlerinin Türkiye'de gerçekleştirilmesi için HAMAS yanlısı kişiler hakkında bilgi toplandığı belirtilmiştir.",
+        "reference_answer": "hususlarda uluslararası kamuoyunda bir algı oluşturacağı, -Ülkemizde üçüncü ülke unsurlarınca organize edilen bu tip faili meçhul yasadışı eylemlerin, Türkiye'nin yabancı ülkelerin operasyon alanı olduğu algısına yol açacağı…\" Kısacası savcılığa göre Haniye suikastının benzerleri Türkiye’de de gerçekleştirilecekti. Bunun için HAMAS yanlısı kişiler hakkında bilgi toplanıyordu. Eminim merak ettiniz. İsrail’e MOSSAD ajanı olmadığı halde bilgi verenler kimler? Gelelim duruşmalarda bu isimlerin anlattığına… Örneğin A.Y.’nin avukatı şunu anlattı: \"Benim müvekkilim emekli polis memuru, malum emeklilik şartlarından dolayı dedektiflik işi ve şirketi kurmuştur.",
+        "bert_f1_score": 0.576206386089325,
+        "semantic_similarity": 0.8118681907653809,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Yabancı bir kişinin Türkiye'deki ikamet bilgilerini vermesi üzerine müvekkil ne konuda iş birliği kurmuştur?",
+        "predicted_answer": "Yabancı bir kişinin Türkiye'deki ikamet bilgilerini vermesi üzerine müvekkil ne konuda iş birliği kurmuştur?\n\nMüvekkil, bir dedektiflik şirketi kurmuş ve yabancı bir kişinin Türkiye'de ikamet edip etmediğini araştırmıştır.",
+        "reference_answer": "Yabancı bir kişi müvekkil ile iletişime geçerek Türkiye'de bulunan yabancı bir kişinin ikamet bilgilerini vererek o kişinin orada oturup oturmadığına dair müvekkilim ile iş birliği kurmuştur, müvekkil yabancı kişinin orada oturduğunu kendisi ile iletişime geçen kişiye bilgi vermiştir…\" C.C.P.’nin avukatı: \"Müvekkilimin dedektiflik şirketi vardır…\" A.G.’nin avukatı: \"Müvekkil Google reklamlar kısmında gözükecek üzere dedektiflik faaliyeti gerçekleştiriyor…\" M.S.’nin avukatı: \"Müvekkilimin dedektiflik şirketi vardır, bunlar yasal şirketlerdir, Ticaret Sicil Gazetesi’nde yetkileri yer almaktadır…\" İ.Y.’nin avukatı: \"Türkiye'de dedektif tutmak yasak değil ama yasal olması zorundadır, müvekkilimin şirketi vergiye tabiidir…\" H.G.’nin avukatı: \"Müvekkilimin dedektiflik firması var…\" Uzatmayayım… Haberlerde \"eski polis MOSSAD ajanı çıktı\" başlıklarının nedeni zaman geçtikçe anlaşıldı. Türk sanıklar, polislikten sonra dedektiflik bürosu kurmuştu. Yurtdışından MOSSAD bağlantılı kişiler; elbette ajan olduğunu söylemeden, masum görünen taleplerde bulunmuşlardı. Kimi zaman bir İngiliz bankasının avukatı olarak Türkiye’de bulunan bir kişi için icra takibi yapacaklarını bu kişinin adresinin doğru olup olmadığını bu firmalara sordular. Kimi zaman ise bir müvekkilinin Türkiye’de yaşayan birisiyle evleneceğini, ancak Türkiye’de de evli olduğunu duyduklarını bunun doğru olup olmadığını araştırmalarını istediler.",
+        "bert_f1_score": 0.5422700643539429,
+        "semantic_similarity": 0.8300409913063049,
+        "llm_evaluation": 0.7
+    },
+    {
+        "instruction": "Sanıklar, kendilerini hangi meslek grubuna ait olarak tanıtarak gayrimenkul almak isteyenlerden bilgi talep ettiler?",
+        "predicted_answer": "İsrail'in Filistin politikasına muhalif Filistinli aktivistler başta olmak üzere ülkemizdeki Ortadoğulu şahıslara ve anılanlarla bağlantılı vatandaşlarımıza ilişkin bilgi toplandı.",
+        "reference_answer": "Bazen de kendilerini emlakçı olarak tanıtarak, Türkiye’de gayrimenkul almak istedikleri için bazı gayrimenkuller ile bilgi talep ettiler. Sanıklar ise temas kurdukları isimlere bu bilgileri para karşılığı verdi. Nitekim sanıklar MOSSAD ajanlığıyla değil, bu kişilere bilgi vermekle suçlanıyordu. Üstelik sanıklar arasında tek bir İsrailli yoktu. Asıl bilgi toplayanlar kurtulurken, yemledikleri sanık olmuştu.",
+        "bert_f1_score": 0.4283497929573059,
+        "semantic_similarity": 0.5796409845352173,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Yabancıların ne olduğunun farkında olup olmadıkları hakkında hangi bilgiler verilmektedir?",
+        "predicted_answer": "Suriyeliler, Afganlar ve Afrikalılar gibi yabancıların ne olduğunun farkında olup olmadıkları hakkında herhangi bir bilgi verilmiyor.",
+        "reference_answer": "Üstelik yabancıların da çok azı ne olduğunun farkındaydı. Çoğunluğu para kazanmak için kendileriyle temas kuranlara adres, fotoğraf vs göndererek sanık olmuştu. Bazıları kafalarına çuval geçirilerek siyah bir minibüse bindirildiklerini, aylarca tutuldukları merkezde ajan olmadıklarını anlatmaya çalıştıklarını söylüyordu. Hatta bazı sanıklar bilgi bile göndermeden banka hesabını kullandırdığı için ajanlık dosyasının içine düşmüştü. Son bir detay… Bir sorun da hukukilikten yaşandı.",
+        "bert_f1_score": 0.4304426610469818,
+        "semantic_similarity": 0.2768867313861847,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Verilen bilgilerin hangi bağlantılı kişilere ait olduğu yazıda belirtilmiştir?",
+        "predicted_answer": "Verilen bilgilerin hangi bağlantılı kişilere ait olduğu yazıda belirtilmiştir. Söz konusu sanıklar da işte bu ağa takılmışlar. Kimler hakkında bilgi toplanmış? İddianame yanıt veriyor: \"İsrail'in Filistin politikasına muhalif Filistinli aktivistler başta olmak üzere ülkemizdeki Ortadoğulu şahıslara ve anılanlarla bağlantılı vatandaşlarımıza karşı.\"",
+        "reference_answer": "Zira verilen bilgiler Türk devletiyle ilgili değildi. Çoğunluğu HAMAS bağlantılı kişilerin Türkiye’deki bilgileriydi. Ceza kanununda buna yönelik bir suç yoktu. Haliyle değerlendirme, bu kişilere yönelik MOSSAD suikastlerinin Türkiye’yi zor durumda bırakabilmesi ihtimali üzerinden yapılıyordu. Dosyada son olarak iki tutuklu kaldı.",
+        "bert_f1_score": 0.4695549011230469,
+        "semantic_similarity": 0.5647557973861694,
+        "llm_evaluation": 0.7
+    },
+    {
+        "instruction": "Yabancı sanıkların yurtdışı yasağının kaldırılmasının ardından, MOSSAD Türkiye’de hangi grubu takip etmektedir?",
+        "predicted_answer": "MOSSAD, HAMAS yanlısı kişileri Türkiye'de takip etmektedir.",
+        "reference_answer": "Yabancı sanıkların yurtdışı yasağı bile kaldırıldı. Bu ve benzeri dosyaların çoğunda hikaye benzer durumda. MOSSAD, çoğunlukla ajan yakalatmadan Türkiye’de HAMAS’ı takip ediyor. Sonunda mağdur olanlar ise üç kuruş kazanma umudundaki sıradan insanlar oluyor. Elbette derdin kaynağı, Ortadoğu’dan Afganistan’a Mısır’dan Afrika’ya bütün krizlerin parçası olan dış politikanın, sonunda ülkeyi uluslararası hesaplaşmaların parçası haline getirmesi.",
+        "bert_f1_score": 0.5449124574661255,
+        "semantic_similarity": 0.7019144296646118,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Ülkenin ekonomisi hangi iki paraya istihbarat toplamaya imkan veriyor?",
+        "predicted_answer": "Paralar: Dolar ve Euro.",
+        "reference_answer": "Ülkenin ekonomisinin iki paraya istihbarat toplamaya imkan vermesi. Küçük dertleri büyük hatalar hazırlıyor. Ağrının sebebini anladığımız gün hastalığımız da tedavi olacak.",
+        "bert_f1_score": 0.3573574721813202,
+        "semantic_similarity": 0.2759776711463928,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Burke'ye göre neden zorba eylemlerinde anlam aranmamalıdır?",
+        "predicted_answer": "Burke'e göre zorba eylemlerinde anlam aranmamalıdır çünkü bu tür eylemler tipik olarak emperyalist oyunlara alet olan ve gerçek bir hedefe sahip olmayan liderlerin eylemleridir.",
+        "reference_answer": "“Zorba bahane aramaz” diyor Burke. Belki de bu yüzden eylemlerinde de anlam aramamalı. Kendi kaderimizi izler gibi günlerce, aylarca, yıllarca izledik. Mafya mensupları, uyuşturucu baronları, çete liderleri, karapara aklayıcılar; İçişleri Bakanlığı koridorlarında poz veriyor, çakarlı arabalarla geziyor, koruma ordusuyla dolaşıyordu. Gelgelelim, asıl korunması gerekenler saldırganlara adeta yem ediliyordu.",
+        "bert_f1_score": 0.4872143566608429,
+        "semantic_similarity": 0.5817158222198486,
+        "llm_evaluation": 0.6
+    },
+    {
+        "instruction": "Güven Şağban, 15 Temmuz günü darbeye karşı koyarken nasıl bir olayla kurtulmuştur?",
+        "predicted_answer": "Güven Şağban, 15 Temmuz darbesine karşı koyarken, FETÖ'ye karşı yıllarca mücadele eden diğer Atatürkçü askerler gibi tasfiye edildi.",
+        "reference_answer": "15 Temmuz günü, darbeye ilk direnen subayların arasında yer alan, darbecilere esir düşen, ölmekten kendisine doğrultulan silahın tutukluk yapmasıyla kurtulan Güven Şağban’ın hikâyesini bu köşede yazmıştım. Şağban, 15 Temmuz sonrasında, FETÖ’ye karşı çıkan bir grup askerle birlikte tasfiye edilmişti. Tepkisini “FETÖ emekli edemedi ama Süleyman Soylu etti” diyerek göstermişti. Meğer bu kadar değilmiş... Geçen hafta Şağban’ı tanıyanların anlattıkları ve yolladıkları belgeler sayesinde daha fazlasının da olduğunu öğrendim.",
+        "bert_f1_score": 0.5508319735527039,
+        "semantic_similarity": 0.7712854743003845,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Şağban, 15 Temmuz öncesinde hangi görevdeydi?",
+        "predicted_answer": "İstihbarat Plan ve Güvenlik Daire Başkanlığı görevindeydi.",
+        "reference_answer": "Şağban, 15 Temmuz öncesinde Jandarma Genel Komutanlığı’ndaki İstihbarat Plan ve Güvenlik Daire Başkanlığı görevindeydi. Tabiri caizse kurumdaki FETÖ’cülerin peşinden koşuyordu. 15 Temmuz gecesi onlarla karşı karşıya geldi. Yetmedi, yargılama süreçlerinde mahkemelerde aleyhlerinde tanık oldu. Bunun elbette bir sonucu vardı.",
+        "bert_f1_score": 0.5573021769523621,
+        "semantic_similarity": 0.567826509475708,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Devlet, FETÖ'nün \"ölüm listesi\"nde bulunan Şağban ve karargâha giderek darbeye direnen albaylar hakkında ne gibi bir karar aldı?",
+        "predicted_answer": "Devlet, FETÖ'nün \"ölüm listesi\"nde bulunan Şağban ve darbeye direnen albaylar hakkında darbeden günler sonra \"özel koruma\" kararı aldı.",
+        "reference_answer": "Tehdit altında yaşamak. Her an öldürülme ihtimaliyle burun buruna olmak. Devlet de o günlerde gereğini yaptı. FETÖ’nün “ölüm listesi”nde bulunan Şağban ve karargâha giderek darbeye direnen albaylar hakkında darbeden günler sonra “özel koruma” kararı aldı. Derken...",
+        "bert_f1_score": 0.7547411918640137,
+        "semantic_similarity": 0.8548665046691895,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Güven Şağban, darbeye direnen Atatürkçü askerlerin tasfiyesi hakkında hangi durumu ifade etmiştir?",
+        "predicted_answer": "Güven Şağban, darbeye direnen Atatürkçü askerlerin tasfiyesi hakkında \"FETÖ emekli edemedi ama Süleyman Soylu etti\" demiştir.",
+        "reference_answer": "Güven Şağban ve darbeye direnen bir avuç Atatürkçü asker jandarmadan tasfiye edildi. Şağban’ın kitabında yazdığı gibi FETÖ ile içiçe olmuş bazı isimler yükseliyor, jandarma başka tarikat ve cemaatlere teslim ediliyordu. Şağban, emekli olduktan sonra da bunu açıkça ifade etti. Sonuçta... Önümde belgeleri duruyor.",
+        "bert_f1_score": 0.562325119972229,
+        "semantic_similarity": 0.727929949760437,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Şağban'ın koruma kararının ne zaman kaldırıldığına dair verilen yazıda hangi tarih belirtilmiştir?",
+        "predicted_answer": "26 Şubat 2019",
+        "reference_answer": "11 Eylül 2017 günü Şağban hakkındaki koruma kararı hiçbir gerekçe göstermeden İçişleri Bakanlığı’na bağlı Ankara Valiliği tarafından kaldırılmış. Şağban, açıkça siyasi olan bu karara itiraz etmiş, mahkemeye taşımış. Ankara 17. İdari Mahkemesi, 13 Nisan 2018’de yürütmenin durdurulmasına karar vermiş. Mahkeme, Şağban’ın tehdit altında olduğunu, devletin onu korumakla yükümlü olduğunu hatırlatmış.",
+        "bert_f1_score": 0.35006749629974365,
+        "semantic_similarity": 0.23956769704818726,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Mahkeme, son olarak hangi tarihte koruma kararının kaldırılması işleminin iptaline karar vermiştir?",
+        "predicted_answer": "26 Şubat 2019 tarihinde mahkeme, koruma kararının kaldırılması işleminin iptaline karar vermiştir.",
+        "reference_answer": "Fakat... Olay öyle kapanmamış. Bakanlığa bağlı valilik yine kararı kaldırmış. Mahkeme ile bakanlık arasında defalarca gidip gelen karar, her seferinde mahkeme tarafından Şağban lehine sonuçlanmış. Son olarak 26 Şubat 2019 tarihinde mahkeme, koruma kararının kaldırılması işleminin iptaline karar vermiş.",
+        "bert_f1_score": 0.6826285719871521,
+        "semantic_similarity": 0.7671627998352051,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Ankara 3. İdari Mahkemesi, İçişleri Bakanlığı'nın hangi tarihte Şağban’a tazminat ödemesine karar vermiştir?",
+        "predicted_answer": "30 Kasım 2020.",
+        "reference_answer": "Gelgelelim, İçişleri Bakanlığı açık bir hukuk tanımazlıkla bu kararı da uygulamamış. Sonunda... Ankara 3. İdari Mahkemesi, 30 Kasım 2020’de İçişleri Bakanlığı’nın Şağban’a tazminat ödemesine kararı vermiş. Mahkeme, İçişleri bakanının hukuk tanımazlığını mahkûm etmiş.",
+        "bert_f1_score": 0.42392054200172424,
+        "semantic_similarity": 0.2134743630886078,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Murat Bakan, içişleri bakanına hangi konuyla ilgili soru önergesi vermiştir?",
+        "predicted_answer": "Murat Bakan, içişleri bakanına 15 Temmuz darbesine karşı direnen kişilerin koruma kararının kaldırılması ve hayati riskle karşı karşıya bırakılmaları hakkında soru önergesi vermiştir.",
+        "reference_answer": "İşin ilginci...Buna rağmen karar yine uygulanmamış. Olay Meclis’e taşınmış. CHP milletvekili Murat Bakan, içişleri bakanına çeşitli kereler soru önergesi vermiş. Önergede yazan bazı cümleler dikkat çekici: “15 Temmuz ile ilgili bir kahramanlık hikâyesi yaratılırken hayatlarını riske atarak darbeye karşı direnen kişilerin koruma kararının kaldırılması ve hayati riskle karşı karşıya bırakılmaları nasıl açıklanmaktadır?” Murat Bakan’ın verdiği bilgilere göre maalesef bakanlıktan sorulara ciddi bir yanıt gelmemiş! Sadece eleştirel medyada değil, hükümet medyasında da kahraman olarak tanıtılan, darbeciler tarafından vurulacakken silahın tutukluk yaptığı an defalarca gösterilen Güven Şağban’ın 15 Temmuz sonrası yaşadıkları bu şekilde.",
+        "bert_f1_score": 0.6024205088615417,
+        "semantic_similarity": 0.8101906776428223,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "FETÖ darbesi başarısız olsaydı, sonuç olarak ne olacaktı?",
+        "predicted_answer": "FETÖ darbesi başarısız olsaydı, Jandarma İçişleri Bakanlığı'na bağlanacak ve darbe gecesi karargâh önünde FETÖ'ye ilk kurşunu atan askerler tasfiye edilecekti.",
+        "reference_answer": "FETÖ darbeyi başarsa o gecenin sonunda öldürülecekti. FETÖ başaramadı. Jandarma, İçişleri Bakanlığı’na bağlandı. İlk iş olarak darbe gecesi karargâh önünde FETÖ’ye ilk kurşunu atan askerler tasfiye edildi. Yetmedi, koruma kararları kaldırılarak FETÖ’ye “Alın vurun” denildi.",
+        "bert_f1_score": 0.7467644214630127,
+        "semantic_similarity": 0.9361717104911804,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Atatürkçü askerlerin 15 Temmuz sonrasında hangi tarihten devam eden stratejilere karşı çıktığı belirtilmiştir?",
+        "predicted_answer": "15 Temmuz sonrasındaki stratejilere karşı çıktığı belirtilmiştir.",
+        "reference_answer": "Kuşkusuz bunun sebebi, Atatürkçü askerlerin, 15 Temmuz sonrasında, 14 Temmuz’dan devam eden stratejilere karşı çıkmasıydı. Mafyadan baronlara suç örgütü liderleri korumalarla, çakarlarla gezip eski içişleri bakanıyla fotoğraf albümü yaratırken; mahkeme içişleri bakanının “hukuk tanımazlığı”nı açık bir şekilde kayıtlara geçirdi. Zorbanın hikâyesi, üstünde oturduğu tahttan ininceye kadardır. Tarih, sonsuz anlatıyı ancak haklı olana verir.",
+        "bert_f1_score": 0.47739163041114807,
+        "semantic_similarity": 0.4014260470867157,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Devlet Bahçeli'nin basın toplantısında ne hakkında konuşmaya hazırlandığına dair bir bilgi var mı?",
+        "predicted_answer": "Devlet Bahçeli'nin basın toplantısında konuşmaya hazırlandığına dair bir bilgi yok.",
+        "reference_answer": "Yer ıslak. Yaprak ıslak. Kiremit ıslak. Ne garip, bir tek buluttan şüphelenmiyorlar. Kimse beklemiyordu. Haliyle komplo teorileri havada uçuştu. Devlet Bahçeli’nin basın toplantısından söz ediyorum. Pazartesi bu köşede okuduğunuz \"MHP’nin hedefindeki 154 kişi\" başlıklı yazıdan sonra kulislere düştü. Acaba Bahçeli ne diyecek diye herkes merak ediyordu. Kimsenin beklediği gibi olmadı. Yalnız, Bahçeli belli ki 154 kişi hakkında konuşmaya hazırlanmıştı.",
+        "bert_f1_score": 0.4715573191642761,
+        "semantic_similarity": 0.46148544549942017,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "MHP'nin Sinan Ateş cinayeti davasına bakan mahkemeye verdiği dilekçenin bulunduğu dosyayı elinde bulunduran kimdir?",
+        "predicted_answer": "Soruşturma dosyasında yer alan ifadeye göre kimdir?",
+        "reference_answer": "Elindeki dosyada MHP’nin Sinan Ateş cinayeti davasına bakan mahkemeye verdiği dilekçe vardı. Gelgelelim, toplantıdaki tek bir gazeteci bile bunu sormadı. Bahçeli “başka soru var mı efendim\" dedi. Kimse ses çıkarmadı. Belli ki salondaki gazeteciler 154’ler listesinde haber değeri görmüyordu! Toplantı bitti sanıldı. Hatta cılız bir bitti alkışı duyuldu. Ancak Bahçeli, \"Bir konuyu burada hatırlatmak istiyorum\" diye başladı. 154 kişinin olduğu listeyi göstererek, hesap sormaktan, takip ettiklerinden, gerekenin yapılacağından bahsetti. Böylece MHP en resmi ağızdan 154’lere \"peşinizdeyiz\" diyordu. Peki şimdi ne olacak?",
+        "bert_f1_score": 0.36419442296028137,
+        "semantic_similarity": 0.5354453325271606,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Ümit Özdağ, söz konusu listedeki isimler hakkında ne düşünmektedir?",
+        "predicted_answer": "Ümit Özdağ'ın söz konusu listedeki isimlerle ilgili düşünceleri hakkında herhangi bir bilgi bulunmuyor.",
+        "reference_answer": "Hayır, MHP ne yapacak demiyorum. Zira söz konusu dilekçeyi mahkemenin aynı gün reddettiğini biliyoruz. Haliyle söz konusu liste hukuken kadük durumda. Sorduğum listedeki isimlerin ne yapacağı. Bunu ben de merak ederek çeşitli kişilere sordum. Aldığım cevapları şöyle özetleyeyim… Ümit Özdağ: Kaale almıyorum. Önemsemiyorum. Kendi ülkü ocakları başkanını tetikçilere öldürten bir zihniyet benim için ancak mücadele edilecek bir zihniyettir. Mücadeleme devam edeceğim. Ali Babacan: KRT'de de söyledim. Bahçeli’nin bir ayağı siyasetin içerisinde öbür ayağı çetenin mafyanın içerisinde.",
+        "bert_f1_score": 0.44115445017814636,
+        "semantic_similarity": 0.3810683786869049,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "AK Parti camiasının ortaklık yaptığı yapı ile ilgili yazar ne düşünüyor?",
+        "predicted_answer": "Yazar AK Parti camiasının ortaklık yaptığı yapıya ilişkin olarak şüpheci ve eleştirel bir bakış açısına sahip gibi görünüyor.",
+        "reference_answer": "Böyle siyaset yapılmaz. Devlet gücünü yanlış şekilde kullanan ve maddi menfaat sağlayan bir yapı oluştu. AK Parti camiası kiminle ortaklık yaptığının farkında mı bilmiyorum. Kuruluştaki değerlere bakıyorum bugün kimlerle yanyana olmak zorunda kaldığına bakıyorum, üzülüyorum. Bu kadar suçun AK Parti ile yanyana anılmasındaki rahatsızlığı görüyorum. Uğur Poyraz: Bu dilekçe mahkemeye sunulduğunda oradaydım. Mahkeme dilekçeyi reddetti. Böyle bir dilekçe her şeyden önce bir cüret. Hukuk bilmezlik, siyasi ahlak yoksunluğu, kabadayılık… Dilekçenin içeriği de hukuki değil. Alınganlık üzerine kurulmuş bir metin. Kimse MHP’yi kendi kendine telaffuz etmedi.",
+        "bert_f1_score": 0.43998032808303833,
+        "semantic_similarity": 0.6290961503982544,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Bu yazıda yargılamaya ilişkin hangi parti ile ilişkilendirilen sanıkların bulunduğu belirtiliyor?",
+        "predicted_answer": "FETÖ.",
+        "reference_answer": "Bizzat ortadaki yargılamada sanıkların kendisi MHP’li irtibat ve iltisaklı. Bu soruşturmayı ve kovuşturmayı, kolluk ve yargı yaptı. Ayrıca hangi yetkiyle bu listeyi yapıyorsunuz. \"Hukuk içinde\" deseler de yaptıkları açık bir hedef gösterme. Ben öncelikle devletin ne yapacağını merak ediyorum. Mahkemenin reddederek yok hükmünde saydığı bu dilekçe için görev önce Ankara Cumhuriyet Başsavcılığı ve Yargıtay Cumhuriyet Başsavcılığı’nda. Devlet aklının ve ahlakının ortaya çıkmasını bekliyoruz. Buna da makul bir süre tanıyoruz. Eğer bu akıl ve ahlak ortaya çıkmazsa biz hakkımızı kullanırız. Ben ve genel başkanım süreci bu şekilde takip ediyoruz. Murat Bakan: Ben tehditlerle çok karşılaşıyorum.",
+        "bert_f1_score": 0.3177756071090698,
+        "semantic_similarity": 0.2108139991760254,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Yazar, tetikçilerden korunmak amacıyla ne yapmaya karar vermiştir?",
+        "predicted_answer": "Yazar, tetikçilerden korunmak amacıyla Oktar'la görüşmelerinin \"devlet görevi\" olduğunu söyleyerek yazmıştır.",
+        "reference_answer": "Tetikçiler cesaretlenmesin diye peşini de bırakmıyorum. Avukatlarımla da bu dilekçe konusunu görüştüm. Ancak şimdilik bekleyip, sakince değerlendirmeye karar verdim. Ruşen Gültekin: Olabildiği ölçüde çabuk bir tavır almak gerekiyor. Biliyoruz ki yargı ellerinde, kontrol altında. Ancak biz yine de hukukumuzu savunmalıyız. Bizi süründürmelerine izin vermemeliyiz. Yapılan bütün hakaretler için MHP’ye bir tazminat davası açmanın doğru olduğunu düşünüyorum. Bu dilekçe mahkemeye verilmiş. Hukuka uygun bulunmamış. Tabiri caizse şov yapılmış.",
+        "bert_f1_score": 0.41704869270324707,
+        "semantic_similarity": 0.45786988735198975,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Yazının yazarına göre, tazminat davası açmanın en doğrusu olduğunu düşündüğü durum nedir?",
+        "predicted_answer": "Yazının yazarına göre tazminat davası açmanın en doğrusu olduğunu düşündüğü durum, birisinin biyolojik babası olduğu iddiasının desteklenmediği ve herhangi bir somut verinin bulunmadığı durumdur.",
+        "reference_answer": "Ortada belirgin bir şekilde fişleme, afişe etme, hakaret var. Hep birlikte tazminat davası açmanın en doğrusu olduğunu düşünüyorum. Orhan Uğuroğlu: Eğer Ayşe Ateş’i ve kızlarını, Adalet Bakanı’nı da çağırarak adalet sözü veren Recep Tayyip Erdoğan suçluysa ben de suçluyum. Aslında Bahçeli’nin hedefindeki ismin Erdoğan olduğunu düşünüyorum. Bu dilekçe görünürde 154 kişi ama Erdoğan’ı da eklerseniz 155 kişi. Çünkü hepimiz Sinan Ateş için adalet istedik. Avukatımla konuştum. Bizi hedef gösteren bu dilekçeyi hazırlayanlarla ilgili haklarımızı arayacağız. Daha önce MHP’lilerin saldırısına uğradığım davanın Sinan Ateş davasıyla birleştirilmesini isteyeceğim. Sonuçta aynı organizasyonun siyasi saldırıları söz konusu. Ayrıca koruma talep edeceğim.",
+        "bert_f1_score": 0.4177727997303009,
+        "semantic_similarity": 0.39121174812316895,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Türker Ertürk, daha önce kimin tarafından ölümle tehdit edildiğini belirtmiştir?",
+        "predicted_answer": "Türker Ertürk, Feti Yıldız tarafından ölümle tehdit edildiğini belirtmiştir.",
+        "reference_answer": "Türker Ertürk: Daha önce de Devlet Bahçeli’nin koruması tarafından ölümle tehdit edildim. Yargıya Bahçeli’yle fotoğrafını bile sundum. Ama yargı tehdit edeni bulamadı! Bu partinin artık hukuka bağlı bir siyasi parti özelliğini kaybettiğini düşünüyorum. Bu nedenle Yargıtay Başsavcılığı’na gerekenin yapılması için başvurmayı düşündüm. Ancak bu mümkün mü emin olamadım. Tehdit edildiğim için dava açmayı düşünüyorum. Ayrıca 154’lükler olarak ortak bir bildiri hazırlanması mantıklı olur. Bu girişim de birinci sıradaki ana muhalefet liderine yakışır. Ufuk Söylemez: Devlet Bey ile beraber aynı Meclis’te görev yaptım. Demokrasiye saygılı ve nazik bir insan olarak bilirdim.",
+        "bert_f1_score": 0.4491479992866516,
+        "semantic_similarity": 0.6546633243560791,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Yazıda yazarın milliyetçilik anlayışına göre kimden öğrenecek olmadığını ifade ederken hangi siyasi liderin adını kullandığı belirtilmiştir?",
+        "predicted_answer": "Recep Tayyip Erdoğan.",
+        "reference_answer": "Ancak artık kendisini tanımakta zorlanıyorum. Böyle bir utanç listesi hazırlaması hakkında ne kadar şaşırdığımı anlatamam. Ben Jandarma gazisi bir babanın oğluyum. Merkezdeyim ve Atatürk milliyetçisiyim. Milliyetçiliği Bahçeli’den öğrenecek değilim. Ne demişim diye bakıyorum. Sinan Ateş cinayetinin üstünün kapatılmamasını, siyasetin üstünü örtmemesi gerektiğini söylemişim. MHP dahil kimseye toptan bir ithamda bulunmamışım. Ayrıca MHP de eleştirilebilir. Biz Devlet Bey ile birbirimizi zamanında çok eleştirdik. Madem öyle anayasaya \"MHP eleştirilemez\" maddesi koysunlar, tam olsun.",
+        "bert_f1_score": 0.3450515568256378,
+        "semantic_similarity": 0.469323068857193,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Afşin Hatipoğlu, hangi konuda bir girişim düşündüğünü ifade etmiştir?",
+        "predicted_answer": "Afşin Hatipoğlu, Diyanet personelinin afetzedelere destek verecek psikososyal daire başkanlığına getirilmesini eleştirdi.",
+        "reference_answer": "Merak ettiğim, bu listeyi hazırlayıp, zamanı gelince gerekenin yapılacağını söylemek ne demek. Neyi beklediklerini çok merak ediyorum. Bu listeyle bizi korkutmak istiyorlar. Biz korkmayız, hiçbir zaman da listeler hazırlamayız. Henüz bir girişimde bulunmadım. Ancak bir girişim gerçekleşirse orada olmaya hazırım. Afşin Hatipoğlu: Hukuki bir girişim düşündüm. Ama henüz bir karar vermedim. Bu konuda bir girişim olursa ben de katılırım. Daha önce saldırıya uğradığım halde koruma taleplerim bile reddedildi. **** Liste uzayıp gidiyor… Türk siyasi tarihine artık 154’lükler olarak geçenlerin tavrı bu şekilde.",
+        "bert_f1_score": 0.37877288460731506,
+        "semantic_similarity": 0.3942711055278778,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Hangi ortak hedefler doğrultusunda Yargıtay Cumhuriyet Başsavcılığı'na çeşitli önerilerde bulunulmaktadır?",
+        "predicted_answer": "Yargıtay Cumhuriyet Başsavcılığı'na çeşitli önerilerde bulunulmaktadır; bunlar arasında ortak hedefler doğrultusunda demokrasi ve hukuka sahip çıkmak ve bu girişimlere hukukun ve siyasetin öncülük etmesi yer almaktadır.",
+        "reference_answer": "Ortak bir bildiri ile demokrasi ve hukuka sahip çıkmaktan Yargıtay Cumhuriyet Başsavcılığı’nı göreve çağırmaya kadar çeşitli öneriler var. Beklenti ise bu girişimlere hukukun ve siyasetin öncülük etmesi. Tesadüf bu ya, MHP’nin daha önce hedef gösterdiklerinin başına hep saldırı vakalarının geldiği, olayın da hep \"siyasi değil\" diye kapatıldığı hatırlanırsa \"hesap soracağız\" açıklamalarını devletin ciddiye alması gerekiyor.",
+        "bert_f1_score": 0.5952537655830383,
+        "semantic_similarity": 0.7803449630737305,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "Sinan Ateş cinayeti duruşmalarında tetikçiler hangi savunmayı yaptı?",
+        "predicted_answer": "Tetikçiler \"çay bahanesiyle imzalatılan ifadeyi kontrol etmediğini kabul etti\" savunmasını yaptı.",
+        "reference_answer": "Kim olmak isteğimizi sözlerimiz, olduğumuzu eylemlerimiz anlatır. Sinan Ateş cinayeti duruşmalarının başlamasıyla, tetikçiler, ağız birliğiyle, “Arkadaşları vurdu” savunması yaptı.",
+        "bert_f1_score": 0.489162415266037,
+        "semantic_similarity": 0.38186115026474,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "MHP’ye yakın medyanın işlediği tez nedir?",
+        "predicted_answer": "MHP'ye yakın medyanın işlediği tez \"Asıl hedef MHP\"dir.",
+        "reference_answer": "MHP’ye yakın medya ise tetikçileri savunarak, “Asıl hedef MHP” tezini işledi. Aynı gün, MHP avukatları da mahkemeye bir dilekçe sundu.",
+        "bert_f1_score": 0.6510037779808044,
+        "semantic_similarity": 0.8195381164550781,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "MHP, davaya hangi sıfatla katılma talebinde bulunmuştur?",
+        "predicted_answer": "MHP, \"mağdur\" olarak davaya katılmaya çalıştı.",
+        "reference_answer": "MHP’nin “suçtan zarar gören” olduğunu ifade ettiler. Davaya “mağdur” olarak katılma talebinde bulundular.",
+        "bert_f1_score": 0.7089309096336365,
+        "semantic_similarity": 0.8005391359329224,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Mahkeme hangi talebi reddetti?",
+        "predicted_answer": "Mahkeme yer değiştirme cezası talebini reddetti.",
+        "reference_answer": "Mahkeme talebi reddetti. Kuşkusuz, tetikçilerin savunmalarından servis edilen haberlere hatta dilekçeye kadar ortada bir organizasyon görüntüsü var.",
+        "bert_f1_score": 0.5069831013679504,
+        "semantic_similarity": 0.5059380531311035,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "MHP'nin dilekçesinde MHP'nin tanımı nasıl yapılmıştır?",
+        "predicted_answer": "MHP, Türk milletinin kadim hikâyesini temsil eden ve tarihsel tecrübenin bugünkü adresi ve kurumsal merkezidir.",
+        "reference_answer": "Peki MHP’nin dilekçesinde ne yazıyor? Atatürk’ün Cumhuriyeti milliyetçilik fikri üzerine kurduğu, Atatürk’ün ölümünden sonra milliyetçiliğin geri plana atıldığı, Alparslan Türkeş’in MHP’yi kurmasıyla milliyetçiliğin siyasette yer aldığı, Bahçeli’nin milliyetçiliği çağa uyarladığı söylendikten sonra şu ifadeler kullanılmış: “MHP’nin durduğu yer Türkiye üzerinde hesapları olan pek çok farklı kesimi rahatsız etmektedir.” Dilekçede MHP ise şöyle tanımlanıyor: “MHP, Türk milletinin kadim hikâyesini temsil eden ve tarihsel tecrübenin bugünkü adresi ve kurumsal merkezidir.” Bu tanıma göre, “MHP’nin eleştirisi” “Türk milletinin eleştirisi” sayılıyor!",
+        "bert_f1_score": 0.5710515379905701,
+        "semantic_similarity": 0.6529452800750732,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "MHP'nin dilekçesinde, Sinan Ateş cinayeti üzerinden MHP'yi eleştirenlerin hangi gruplar olarak tanımlandığı belirtilmiştir?",
+        "predicted_answer": "Bölücü, liberal, marksist ve FETÖ'cü yapıların elemanları.",
+        "reference_answer": "MHP’nin dilekçesinde, Sinan Ateş cinayeti üzerinden MHP’yi eleştirenler şöyle anlatılıyor: “Bölücü, liberal, marksist, FETÖ’cü yapıların elemanları, sistematik ve istikrarlı bir şekilde, küresel çeşitli güçlerle ittifak içinde ve siyasi meşreplerine de uygun paylaşım, haber ve yazılarla MHP’ye iftira etmektedir.” MHP avukatları İbrahim Ethem Yiğit ve Çağrı Can Pak, mahkemeye, çoğunluğu televizyon programlarından oluşan bir hard disk de sunmuş. Buna dayanarak da “MHP’ye saldırı” yaptığını söylediği 154 kişinin listesini vermiş.",
+        "bert_f1_score": 0.5655364990234375,
+        "semantic_similarity": 0.5705102682113647,
+        "llm_evaluation": 0.7
+    },
+    {
+        "instruction": "MHP'nin \"bölücü, liberal, Marksist, Fetöcü yapıların elemanları\" olarak andığı 154 kişinin çoğunluğu hangi ideolojilerle tanınmamaktadır?",
+        "predicted_answer": "Çoğunlukla liberal ve Marksist olarak tanınmamaktadır.",
+        "reference_answer": "Bu 154 kişinin mahkemeye çağrılmasını, ifadelerinin alınmasını, tabiri caizse “MHP ile derdiniz nedir” diye sorulmasını istemiş. İşin ilginci, MHP’nin “bölücü, liberal, Marksist, Fetöcü yapıların elemanları” diye andığı 154 kişinin çoğunluğu Marksist ya da liberal olmadığı gibi, FETÖ ve bölücü ideolojilerle de mücadelesiyle tanınan kişiler.",
+        "bert_f1_score": 0.4608461856842041,
+        "semantic_similarity": 0.29994499683380127,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "154 kişinin isminin yer aldığı dilekçede hangi isimlere yer verilmiştir?",
+        "predicted_answer": "Soru: 154 kişinin isminin yer aldığı dilekçede hangi isimlere yer verilmiştir?\n\nCevap: Başak Demirtaş ve 12 doktorun adları.",
+        "reference_answer": "FETÖ’cülük ile nam salmış bazı kişiler ise listede yok. Dilekçenin ekinde şu 154 kişinin ismi var: Siyasetçiler: Özgür Özel, Deniz Yavuzyılmaz, Gökhan Günaydın, Ali Mahir Başarır, Sezgin Tanrıkulu, Murat Bakan, Yunus Emre, Özgür Karabat, Cumhur Uzun, Ali Öztunç, Mustafa Adıgüzel, Mahir Polat, Ümit Özdağ, Müsavat Dervişoğlu, Uğur Poyraz, Turhan Çömez, Buğra Kavuncu, Ahmet Davutoğlu, Selçuk Özdağ, Ali Babacan, Erkan Baş, Levent Tüzel, Sevda Karaca, Alper Taş, Remzi Çayır, Hüseyin Baş, Salih Uzun, Cem Toker, Doğan Aydal, Ahat Andican, Aytun Çıray, Bahattin Yücel, Ali Haydar Fırat, Emin Şirin, Fikri Sağlar, Gülay Yedekçi, Mustafa Böğürcü, Nazif Okumuş, Önay Alpago, Bahadır Erdem, Turan Aydoğan, Yavuz Ağıralioğlu, Yavuz Değirmenci, Gaye Usluer, Nesrin Nas, Ufuk Söylemez, Gülistan Kılıç Koçyiğit.",
+        "bert_f1_score": 0.41458049416542053,
+        "semantic_similarity": 0.5081235766410828,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Verilen yazıya göre köşe yazısında hangi gazeteciler ve hukukçuların isimleri geçmektedir?",
+        "predicted_answer": "Köşe yazısında Murat Bakan ve Güven Şağban'ın isimleri geçmektedir.",
+        "reference_answer": "Gazeteciler: Murat Muratoğlu, Akif Beki, Ali Kemal Erdem, Altan Sancar, Asuman Aranca, Atakan Sönmez, Ayşen Şahin, Bahadır Özgür, Barış Pehlivan, Caner Taşpınar, Çiğdem Toker, Deniz Zeyrek, Dinçer Gökçe, Nedim Türkmen, Elfin Tataroğlu, Elif Doğan Şentürk, Doğan Şentürk, Ersin Eroğlu, Fatih Ergin, Fatih Polat, Fırat Fıstık, Fikret Bila, Hakan Çelenk, Hilmi Hacaloğlu, Hüsnü Mahalli, İbrahim Kahveci, İnanç Uysal, İslam Özkan, İsmail Saymaz, Kemal Göktaş, Masum Gök, Mehmet Bal, Mehmet Tezkan, Merdan Yanardağ, Miyase İlknur, Murat Ağırel, Murat Karan, Murat Yetkin, Nevşin Mengü, Nevzat Çiçek, Nurcan Gökdemir, Orhan Uğurluoğlu, Özlem Akarsu Çelik, Emre Kongar, Sertaç Eş, Seyhan Avşar, Taha Akyol, Timur Soykan, Uğur Dündar, Yaşar Aydın, Yavuz Oğhan, Yavuz Selim Demirağ, Yıldız Yazıcıoğlu, Zübeyde Sarı, Mustafa Balbay, Mustafa Kurdaş, Hilal Köylü, Orhan Bursalı, Umut Taştan, Alican Uludağ, Namık Koçak, Özlem Gürses, Yalçın Doğan. Hukukçular: Celal Ülgen, Afşin Hatipoğlu, Bülent Yücetürk, Ruşen Gültekin, Figen Çalıkuşu, Gürkan Çakıroğlu, İlhan Cihaner, Mehmet Saral, Muzaffer Nerse, Hasan Sınar, Salim Şen, Gamze Pamuk Ateşli.",
+        "bert_f1_score": 0.39855852723121643,
+        "semantic_similarity": 0.442810982465744,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Yazıda yer alan araştırmacı ve akademisyenlerin isimleri arasında kimler bulunmaktadır?",
+        "predicted_answer": "Soruya yanıt olarak, araştırmacı ve akademisyenlerin isimlerine ilişkin ek bilgiyi kullanmayacağım. Bu nedenle, soruya doğrudan yanıt olarak \"Süleyman Yıldırım, Halil Gökhan Özkal, Ünsal Ban\" diye cevap vereceğim.",
+        "reference_answer": "Araştırmacı/Akademisyen: Can Selçuki, Ceren Kumbasar Mumay, Güven Gürkan Öztan, Berk Esen, Can Kakışım, Haldun Solmaztürk, İbrahim Uslu, Eren Aksoyoğlu, Erol Mütercimler, Mehmet Ali Kulat, Mehmet Yaşar Altındağ, Oğul Aktuna, Mithat Baydur, Öner Günçavdı, Sait Yılmaz, Ersin Kalaycıoğlu, İpek Özkal Sayan, Semih Turhan, Sezin Öney, Suat Özçelebi, Seda Demiralp, Osman Sert, Burak Cop, Barış Övgün, Necati Özkan, Tacire Bektaş, Tayfun Atay, Onur Alp Yılmaz, Gülgün Erdoğan Tosun. Diğer: Türker Ertürk (emekli amiral), Hanefi Avcı (emekli polis), Ömer Zengin (Sinan Ateş’in arkadaşı).",
+        "bert_f1_score": 0.47210338711738586,
+        "semantic_similarity": 0.5119467973709106,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "MHP’nin cinayete adlarını karıştıran isimlerden biri kimdir?",
+        "predicted_answer": "Devlet Bahçeli.",
+        "reference_answer": "*** Halihazırda Tolgahan Demirbaş’tan Emre Yüksel’e sanıkların, Olcay Kılavuz’dan Ahmet Yiğit Yıldırım’a şüphelilerin önemli bir kısmı MHP ve Ülkü Ocakları yönetiminden. MHP’nin cinayete adlarını karıştıran bu isimlerden değil de cinayeti sorgulayan kişilerden şikayetçi olması dikkat çekiyor.",
+        "bert_f1_score": 0.37223249673843384,
+        "semantic_similarity": 0.516143798828125,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "MHP yönetiminin cinayetin konuşulmasını engellemeye çalıştığına dair hangi dikkat çekici yönler belirtilmiştir?",
+        "predicted_answer": "MHP yönetiminin cinayetin konuşulmasını engellemeye çalıştığına dair dikkat çekici yönler şunlardır: \"17 - 25 Aralık öncesinde makam ve mevki sahibi olmak için bu yapıyla beraber olduğu düşünülen birçok bürokratın kendileri hakkında da soru işaretleri ortaya çıkacağı korkusuyla FETÖ üyesi olduğunu bildikleri kişileri söylemekten korkmalarıdır.\"",
+        "reference_answer": "MHP yönetimi, belli ki cinayetin konuşulmasını engellemeye çalışıyor. Öte yandan mahkeme bu talebi kabul etseydi ve 154 kişi çağrılsaydı sadece ifade süreci yıllar alacaktı.",
+        "bert_f1_score": 0.485908180475235,
+        "semantic_similarity": 0.6977688670158386,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Sinan Ateş cinayeti davasının sonucu ne ile belirsizleşecekti?",
+        "predicted_answer": "Davasının sonucu belirsizleşecekti.",
+        "reference_answer": "Böylece Sinan Ateş cinayeti davasının sonucu iyice belirsizleşecekti. Nihayetinde dilekçe cinayetle hesaplaşmaya değil, hesaplaşanlarla hesaplaşmaya çalışıyor.",
+        "bert_f1_score": 0.5773425102233887,
+        "semantic_similarity": 0.6462806463241577,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Hayatın sırrını çözmek için neye ihtiyaç vardır?",
+        "predicted_answer": "Hayatın sırrını çözmek için eyleme ihtiyaç vardır.",
+        "reference_answer": "Söz değil eylem. Olmasaydı hayatın sırrını nasıl çözerdik?",
+        "bert_f1_score": 0.5699836015701294,
+        "semantic_similarity": 0.8453197479248047,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Pazartesi günü ana gündem neydi ve bu duruma halk nasıl bir tepki verdi?",
+        "predicted_answer": "Pazartesi günü ana gündem nafaka konusuydu ve bu duruma halkın tepkisi karışık oldu.",
+        "reference_answer": "Söz söyleyince konuştuğumuzu sanırız. Oysa kelimeler bazen gerçeği gizlemek için kullanılır. Pazartesinin ana gündemi 15 Temmuz’du. Gelgelelim, birçok kişi halkın meseleyle ilgilenmediğinden dert yandı. Eğer sözleriniz açıklayıcı değilse halk ne yapsın?",
+        "bert_f1_score": 0.46464207768440247,
+        "semantic_similarity": 0.6372655034065247,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Hulusi Akar, gazeteci Mehmet Akif Ersoy’un 16 Temmuz sabahı için sorduğu “Mehmet Dişli’yi neden (yanınıza) aldınız?” sorusuna neden yanıt vermedi?",
+        "predicted_answer": "Hulusi Akar, gazeteci Mehmet Akif Ersoy'un \"Mehmet Dişli'yi neden (yanınıza) aldınız?\" sorusuna yanıt vermedi.",
+        "reference_answer": "Örnek mi? Habertürk’te dönemin Genelkurmay Başkanı Hulusi Akar, gazeteci Mehmet Akif Ersoy’un 16 Temmuz sabahı için sorduğu “Mehmet Dişli’yi neden (yanınıza) aldınız?” sorusuna, dakikalarca konuştuğu halde yanıt vermedi. Üstelik darbeden sonra Dişli, sabah 9 gibi Çankaya Köşkü’ne Akar ile gelmekle kalmamış, saat 16.30’a kadar burada gözaltına alınmadan durmuştu. HTS kayıtlarına göre bu aralıkta tam 42 telefon konuşması yapmıştı. Çok yazıldı, hatırlatayım...",
+        "bert_f1_score": 0.6531345248222351,
+        "semantic_similarity": 0.7356859445571899,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Ahmet Davutoğlu, 2015 YAŞ toplantısında hangi kişilerin tasfiyesi için ne tür bir çalışma yaptıklarını belirtmiştir?",
+        "predicted_answer": "MİT müsteşarı tarafından hazırlanan listeye göre iki kademeli bir tasfiye planı oluşturuldu. Birinci kademe Mehmet Dişli gibi kişilerin emekliye sevk edilmesi, ikinci kademe ise diğer kişilerin tasfiyesini içerecekti.",
+        "reference_answer": "Dönemin başbakanı Ahmet Davutoğlu, darbeden önceki son YAŞ toplantısını şöyle anlattı: “2015 YAŞ’ına giderken MİT müsteşarı, titiz bir çalışma ile liste sundu. Bunların tasfiyesini iki kademeli olarak yapalım dedik. O dönem Sayın Hulusi Akar ve sayın cumhurbaşkanımızla bir araya gelerek bunların iki kademeli tasfiyesini öne aldık. Bir grubu şimdi, diğer grubu sonra... Mesela Mehmet Dişli’nin kesinlikle emekliye sevk edilmesi konusunda ben de MİT müsteşarı da çok ısrarcı olduk.",
+        "bert_f1_score": 0.5699329972267151,
+        "semantic_similarity": 0.7249118089675903,
+        "llm_evaluation": 0.8
+    },
+    {
+        "instruction": "MİT’ten gelen rapora göre Dişli’nin emekliye sevki ne zaman söz konusu oldu?",
+        "predicted_answer": "Dişli'nin emekliye sevki 13 Kasım 2016'da söz konusu oldu.",
+        "reference_answer": "Bunu MİT’ten gelen bir rapor üzerine söyledim. Ve son geceye kadar da Dişli’nin emekliye sevki söz konusuydu. Son gece kanaat değişti. Ama bu kanaat benim sebebimle değişmedi. Bu devlet şeyi ile...",
+        "bert_f1_score": 0.558914065361023,
+        "semantic_similarity": 0.4386542737483978,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Hangi yıl Genelkurmay Başkanlığı görevini devralacak olan Kara Kuvvetleri Komutanı Hulusi Akar Paşa, toplantıya katıldı?",
+        "predicted_answer": "2015",
+        "reference_answer": "Girmek istemem detayına...” Belli ki o YAŞ’ta Genelkurmay başkanı olan Akar, yıllardır birlikte çalıştığı Dişli’yi yanında tutmaya karar vermişti. Sadece Davutoğlu değil... O yıl Genelkurmay Başkanlığı’nı bırakan Necdet Özel de gazeteci Fikret Bila’ya 2015 YAŞ’ının hikâyesini anlatmıştı: “Özel Paşa’nın önerisiyle, toplantıya Genelkurmay Başkanlığı görevini devralacak olan Kara Kuvvetleri Komutanı Hulusi Akar Paşa da katıldı. Erdoğan, Davutoğlu, Özel ve Akar toplantı yaptılar. O sırada kuvvet komutanları da dışarıda hazır bekliyorlardı.",
+        "bert_f1_score": 0.22967752814292908,
+        "semantic_similarity": 0.17364752292633057,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Darbeyi yapacak FETÖ'cü askerlerin durumu ne oldu?",
+        "predicted_answer": "FETÖ'cü askerler tutuklandı ve bazıları idam edildi. Jandarma, İçişleri Bakanlığı'na bağlandı ve darbe gecesi karargâhında FETÖ'ye karşı ilk kurşunu atan askerler tasfiye edildi.",
+        "reference_answer": "Kendi kuvvetleri konu olduğunda onlar da Özel Paşa’nın önerisiyle içeri girip görüşlerini aktardılar. Sonuçta terfi listesine bu dörtlü toplantıda son şekli verildi.” Özetleyelim... MİT’in çalışmasına rağmen darbeden önceki son YAŞ toplantısında, darbeyi yapacak FETÖ’cü askerler terfi ettirildi, görevde tutuldu. Onların yerine görev yapacak birçok asker ise terfi bir yana tasfiye edildi. Peki bu durumu sorguluyor muyuz?",
+        "bert_f1_score": 0.5250635147094727,
+        "semantic_similarity": 0.5992127656936646,
+        "llm_evaluation": 0.2
+    },
+    {
+        "instruction": "Mehmet Alkanalka hangi yıl Kara Harp Okulu'ndan mezun olmuştur?",
+        "predicted_answer": "1991",
+        "reference_answer": "Ya da sorgulayabiliyor muyuz? Ne demek istediğimi şöyle anlatayım... Adı: Mehmet Alkanalka.1991’de devre birincisi olarak Kara Harp Okulu’ndan mezun oldu. Güneydoğu ve Irak’ın kuzeyi dahil birçok kırmızı bölgede görev yaptı. 24 yıl boyunca her yıl 100 tam puan sicil ortalaması almıştı.",
+        "bert_f1_score": 0.30925115942955017,
+        "semantic_similarity": 0.3385634124279022,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "Kurumlarda terfi ettirilmeyen kişinin ne rütbesiyle istifa ettiğini biliyor musunuz?",
+        "predicted_answer": "Kurumlarda terfi ettirilmeyen kişinin albay rütbesiyle istifa ettiğini biliyorum.",
+        "reference_answer": "Buna rağmen 2014 ve 2015 YAŞ kararlarında terfi ettirilmeyip yerine FETÖ’cülerin yükseldiğini görünce kurmay albay rütbesiyle istifa etti. Ancak işin peşini bırakmadı. Yukarıda anlattığım tartışmayı izledikten sonra bir karar verdi. Kendisinin yerine FETÖ’cülerin terfi ettirildiği YAŞ toplantılarının hesabını soracaktı. Öyle ya anayasa, “Herkes yaşama, maddi ve manevi varlığını koruma ve geliştirme hakkına sahiptir” diyordu.",
+        "bert_f1_score": 0.502119779586792,
+        "semantic_similarity": 0.6382381916046143,
+        "llm_evaluation": 0.7
+    },
+    {
+        "instruction": "YAŞ üyelerinin çoğunluğunu kim oluşturmaktaydı?",
+        "predicted_answer": "Askerler YAŞ üyelerinin çoğunluğunu oluşturuyordu.",
+        "reference_answer": "Üstelik... YAŞ üyelerinin çoğunluğunu o tarihte askerler oluşturuyordu. Buna rağmen kararlar, kendilerinin de açıkladığı gibi 4-5 kişi tarafından şekillendirilmişti. Yani anayasal bir kurum olan YAŞ’ın aslında üstünden atlanmıştı. Alkanalka, darbeden sonra üç kuruma gitti.",
+        "bert_f1_score": 0.5511475801467896,
+        "semantic_similarity": 0.58078533411026,
+        "llm_evaluation": 1.0
+    },
+    {
+        "instruction": "2014 ve 2015 YAŞ’larında terfi ettirilmeyen askerler hakkında hangi kurumlar ne tür yanıtlar verdi?",
+        "predicted_answer": "Yukarıda belirtilen kurumlardan MİT ve FETÖ'cü askerler terfi ettirildi.",
+        "reference_answer": "2014 ve 2015 YAŞ’larında neden kendisi gibi askerlerin değil de 15 Temmuz’da darbeye kalkışan askerlerin terfi ettirildiğini sordu. Teker teker aldığı yanıtları yazayım: - Genelkurmay Başkanlığı: “Müracaatınızda belirtmiş olduğunuz hususlarla ilgili olarak yürürlükteki yasal mevzuat hükümleri kapsamında yapılabilecek bir işlem/imkan bulunmamaktadır.” -TBMM İnsan Haklarını İnceleme Komisyonu: “Anayasanın 125. maddesinin ikinci fıkrası gereği YAŞ’ın terfi işlemlerine karşı yargı yolu kapalı olduğundan komisyonumuzca tesis edilebilecek bir işlem bulunmamaktadır.” -Anayasa Mahkemesi: “YAŞ kararları yargı denetimi dışındadır. Bireysel başvuru konusu olamaz. Başvuru, konu bakımından yetkisizlik nedeniyle kabul edilemez.” Kısacası...",
+        "bert_f1_score": 0.4409138560295105,
+        "semantic_similarity": 0.5028128623962402,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "2014-2015 YAŞ'ında darbecilerin terfi ettirilmesinin soruşturulamayacağının dayanağı hangi anayasa maddesidir?",
+        "predicted_answer": "Anayasa Mahkemesi'nin 2014-2015 YAŞ'ında darbecilerin terfi ettirilmesinin soruşturulamayacağının dayanağı Anayasa'nın 125. maddesinin ikinci fıkrasıdır.",
+        "reference_answer": "Genelkurmay da TBMM de AYM de 2014-2015 YAŞ’ında darbecilerin terfi ettirilmesinin soruşturulamayacağını söyledi. Bu adı konulmamış bir devlet sırrıydı! Soruşturulamaz, sorulamaz, konuşulamazdı! Üstelik dayanağını da “darbe anayasası” dedikleri anayasanın “YAŞ terfileri yargıya kapalıdır” maddesinden alıyordu. “Darbe anayasası değişsin” diyerek sürekli kanunları değiştirenler nedense bu kısma dokunmamış, dokunmayı aklından geçirmemiş, dokunmaya çalışana da izin vermemişti.",
+        "bert_f1_score": 0.5898757576942444,
+        "semantic_similarity": 0.7895070314407349,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "Halka, 15 Temmuz’a yeterince ilgi göstermediğiniz için neden kızıyorsunuz?",
+        "predicted_answer": "15 Temmuz darbesinin bir numarasının parmağı olduğu Hizmet Vakfı, hâlâ konuşuyor olması size de tuhaf gelmiyor mu?",
+        "reference_answer": "İşte mesele böyle... Halka neden 15 Temmuz’a yeterince ilgi göstermediniz diye kızıyorsunuz da belki de gerçekten meseleyi konuşmadığınız içindir. Sözün gerçekle buluştuğu gün anlatılan bizim hikâyemiz olacak.",
+        "bert_f1_score": 0.45246535539627075,
+        "semantic_similarity": 0.629862904548645,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Yazıyı kaleme alan kişi hangi hastalığın tedavisi için hastanede bulunmaktadır?",
+        "predicted_answer": "Jinekolojik rahatsızlık.",
+        "reference_answer": "\"Bu satırları yazarken müzmin hastalığım akciğer yetmezliği nedeniyle hastanedeyim. Durumumun oldukça kritik olduğunun bilincindeyim. Bu süreci atlatabilir miyim, bilmiyorum. Atlatamazsam, tüm dostlara selam olsun! Bu kitabı da onlara emanet ediyorum. Yaşadıklarımın bir çığlığı olarak kabul edilsin!",
+        "bert_f1_score": 0.36182546615600586,
+        "semantic_similarity": 0.37605559825897217,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "15 Temmuz'un önemi nedir ve bu tarihte hangi olayın yıldönümü kutlanmaktadır?",
+        "predicted_answer": "15 Temmuz'un önemi, Türkiye'de darbeci FETÖ'cülere karşı 15 Temmuz günü gerçekleştirilen ilk müdahaledir. Bu tarihte, dört albayın darbenin ana karargâhlarından birine sadece beylik tabancalarıyla cüretkâr bir şekilde gitmesi ve karargâhı geri almaya çalışmaları bu müdahaleyi oluşturmuştur.",
+        "reference_answer": "Son sözüm, vatan sağ olsun! Türk milleti sonsuza kadar var olsun!\" Bugün 15 Temmuz. Fethullahçı çetenin, 8 yıl önce, darbeyle iktidarı ele geçirme girişiminin yıldönümü. Televizyonlarda, gazetelerde, meydanlarda, salonlarda çok kişi konuşacak. Kalbiyle söz söyleyenlerin arasına; yalancı çobanlar, duruma göre vaziyet alanlar, FETÖ'nün eski suç ortakları, devirle saf değiştiren kriptolar karışacak. Gelgelelim, toprağın altından kafasını kaldırıp konuşamayacak olanlar da var!",
+        "bert_f1_score": 0.4742031395435333,
+        "semantic_similarity": 0.6638794541358948,
+        "llm_evaluation": 0.6
+    },
+    {
+        "instruction": "Güven Şağban, darbe günü hangi görevde olduğunu nasıl anlatıyor?",
+        "predicted_answer": "Güven Şağban, darbe günü jandarma şefi olarak görev yapıyordu.",
+        "reference_answer": "15 Temmuz Gazisi Güven Şağban... Darbe günü hangi görevde olduğunu şöyle anlatıyor: \"2015 yılında Jandarma Genel Komutanlığı’nda ciddi bir yeniden yapılanma olmuştu. Bu yapılanma kapsamında 2013’ten beri, FETÖ ve ona hizmet eden komutanlar marifetiyle sürgünde tutulan ben, Jandarma Genel Komutanlığı’ndaki İstihbarat Plan ve Güvenlik Daire Başkanlığı görevine atanmıştım. Bu daire başkanlığının pek çok görevi olmakla birlikte, asıl görevi, TSK’ya ve Jandarma Genel Komutanlığı’na sızmaya çalışan, FETÖ gibi, yasadışı unsurları tespit etmekti.\" Şağban; uçan jetleri, köprüyü kesen tankları, askerlerden gelen olağanüstü haberleri dinleyince \"FETÖ darbe yapıyor\" sonucuna erkenden vardı. Hızla eve gidip üniformasını giydi. Tabancasını ve bir kutu mermi aldı.",
+        "bert_f1_score": 0.48730432987213135,
+        "semantic_similarity": 0.654805064201355,
+        "llm_evaluation": 0.3
+    },
+    {
+        "instruction": "Güven Şağban, 15 Temmuz ile ilgili neyi kaleme aldı?",
+        "predicted_answer": "Güven Şağban, 15 Temmuz darbesine ilişkin bir not kaleme aldı.",
+        "reference_answer": "Oğluyla vedalaştı. 22.15'te Anıttepe Lojmanları'ndan üç jandarma albay (Aziz Yılmaz, Nurettin Alkan, Ali Demir) ile birlikte FETÖ ile çatışmak için yola çıktı. Aralarına daha sonra Tuğgeneral Ahmet Hacıoğlu da katılacaktı. İşin ilginci, 5 askerden üçü FETÖ'nün Balyoz kumpas davasında hapis yatmış, ateşle sınanmıştı. Güven Şağban geçen 19 Şubat'ta hayatını kaybetti. Ölmeden önce 15 Temmuz'u kaleme aldı.",
+        "bert_f1_score": 0.501139760017395,
+        "semantic_similarity": 0.48086225986480713,
+        "llm_evaluation": 0.5
+    },
+    {
+        "instruction": "\"Yaşadıklarımın Çığlığı\" isimli kitap hangi yayınevi tarafından yayınlandı?",
+        "predicted_answer": "İletişim Yayınları.",
+        "reference_answer": "Biraraya getirilen notlar, bugün, \"Yaşadıklarımın Çığlığı\" adıyla kitap olarak yayınlandı (Kırmızı Kedi Yayınevi). Şağban, Jandarma Komutanlığı kapısında yaşadıklarını şöyle anlatıyor: \"Nizamiye kapısının yanına gidip, 'Bu yaptığınız suç, darbeye iştirak ediyorsunuz. Sizin komutanlarınız biziz. Bizim emrimizi dinleyin. Bunlara inanmayın' dediğim esnada, arkamdan gelen Nurettin Alkan Albay, 'Çekilin önümüzden, açın kapıyı!' diye bağırdı. Böylece teğmenlerle aramızda arbede yaşanmaya başladı.",
+        "bert_f1_score": 0.3284338414669037,
+        "semantic_similarity": 0.40920016169548035,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Nurettin Alkan'ı kim vurdu?",
+        "predicted_answer": "Eylem Tok'un 17 yaşındaki ehliyetsiz oğlu Nurettin Alkan'ı vurdu.",
+        "reference_answer": "Yumruklarla birbirimize girdik.\" Karşılıklı silahlar çekildi. Çıkan çatışmada Nurettin Alkan, kendi personeli Kurmay Binbaşı Ahmet Özcan tarafından vuruldu. Güven Şağban ise darbecilere esir düştü. Ters kelepçe takılarak Jandarma Komutanlığı'nda esirlerin toplandığı odaya götürüldü. Darbecilere \"bu FETÖ darbesi, katılmayın, ya ölür ya yargılanırsınız\" diye bağırıyordu. Bu sırada Jandarma Genel Komutanı Galip Mendi'nin Özel Kalem Müdürü darbeci Kurmay Albay Erkan Öktem silahını çekip Şağban'a ateş etmeye çalıştı.",
+        "bert_f1_score": 0.47113755345344543,
+        "semantic_similarity": 0.4329911470413208,
+        "llm_evaluation": 0.0
+    },
+    {
+        "instruction": "Şağban bu olayın saat kaç civarında gerçekleştiğini notlarında nasıl anlatıyor?",
+        "predicted_answer": "Şağban'ın olayın saatini belirtmediği görülüyor.",
+        "reference_answer": "Hani \"mucize\" derler ya, Öktem'in silahı tutukluk yaptı ve Şağban ölümden kurtuldu. Güvenlik kameralarından çıkarılan o anın görüntülerini Türkiye uzun süre konuşacaktı. O anın önemini Şağban notlarında şöyle anlatıyor: \"Bütün bunlar saat 22.30 civarında olmuştu. Bu olay, yani dört albayın darbenin ana karargâhlarından birine sadece beylik tabancalarıyla, cüretkâr bir biçimde gitmeleri ve karargâhı geri almaya çalışmaları, Türkiye’de darbeci FETÖ’cülere karşı 15 Temmuz günü yapılmış olan ilk müdahaledir. O gece bu olaydan önce darbecilere karşı yapılmış hiçbir eylem ve müdahale yoktur. Diğer müdahale ve açıklamaların hepsi, 16 Temmuz günü yani gece yarısından sonra gerçekleşecektir.",
+        "bert_f1_score": 0.4204048216342926,
+        "semantic_similarity": 0.2830718159675598,
+        "llm_evaluation": 0.0
+    }
+]
