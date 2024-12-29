@@ -15,7 +15,7 @@ load_dotenv()
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-input_path = '/cta/users/elalem2/evaluation_results_bert.json'
+input_path = ''
 
 def load_data(path):
     """JSON dosyasını yükler."""
@@ -31,7 +31,6 @@ def load_data(path):
         return None
 
 def evaluate_with_llm(question, reference_answer, predicted_answer):
-    """LLM ile değerlendirme yapar (chat modeli kullanarak)."""
     messages = [
         {"role": "system", "content": "Bir değerlendirme yargıcı olarak cevapları analiz et."},
         {"role": "user", "content": f"""
