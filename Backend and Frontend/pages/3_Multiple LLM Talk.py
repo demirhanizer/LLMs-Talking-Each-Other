@@ -19,7 +19,7 @@ if not st.session_state.logged_in:
 
 
 
-st.set_page_config(page_title="LLM-LLM Round Robin Interaction", layout="wide")
+st.set_page_config(page_title="LLM-LLM Interaction", layout="wide")
 
 st.markdown(
     """
@@ -129,7 +129,7 @@ def call_multi_llm_api(selected_personas, claim):
 
     try:
         # Send POST request to the Flask API
-        response = requests.post(FLASK_API_URL, json=payload, timeout=120)
+        response = requests.post(FLASK_API_URL, json=payload, timeout=360)
         if response.status_code == 200:
             # Parse and return JSON response
             return response.json()  # Expecting {"conversation": [...]}
@@ -155,7 +155,7 @@ def main():
         "Select LLM(s) (up to 5)",
         llm_options,
         default=default_llms,
-        help="Choose up to 5 LLMs to participate in the round-robin interaction."
+        help="Choose up to 5 LLMs."
     )
 
     initial_message = st.text_area("Enter the initial message to start the conversation")
